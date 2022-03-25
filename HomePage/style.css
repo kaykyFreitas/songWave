@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/*font-family: 'Poppins', sans-serif;*/
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    
+}
+
+header {
+    width: 100%;
+    height: 90px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: #291829;
+}
+
+header > a > img  {
+    width: 80px;
+    margin-left: 10px;
+}
+
+header > .menu {
+    width: 90%;
+    margin-right: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+}
+
+header > .menu > .nav > a {
+    margin-left: 30px;
+    text-decoration: none;
+    color: #FFF;
+}
+
+header > .menu > .logIn {
+    display: flex;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+header > .menu > .logIn > a {
+    margin: 10px;
+    text-decoration: none;
+    color: #FFF;
+}
+
+section {
+    width: 100%;
+    height: 1400px;
+    text-align: center;
+    background-color: #1D131D;
+}
+
+section > .logo {
+    margin-bottom: 30px;
+}
+
+section > button {
+    width: 180px;
+    height: 40px;
+    margin-top: 50px;
+    border-radius: 10px;
+    margin: auto;
+    cursor: pointer;
+    background: linear-gradient(90deg, #FD01CF -17.8%, #3A9DB9 126.48%);
+    font-family: 'Poppins', sans-serif;
+    font-size: 22px;
+    color: #FFF;
+}
+
+section > h1 {
+    margin-top: 100px;
+    color: #FD01CF;
+    font-family: 'Poppins', sans-serif;
+    font-size: 40px;
+}
+
+section > .musicsArea {
+    width: 100%;
+    height: 600px;
+    background-color: #1D131D;
+}
+
+section > .musicsArea > h2 {
+    margin-top: 100px;
+    margin-left: 50px;
+    margin-right: 65%;
+    color: #FD01CF;
+    font-family: 'Poppins', sans-serif;
+    font-size: 30px;
+}
+
+section > .musicsArea > .musicDisplay {
+    width: 100%;
+
+
+    display: flex;
+    justify-content: center;
+}
+
+section > .musicsArea > .musicDisplay > .malvadao3 {
+    width: 25%;
+    height: 350px;
+    margin: 45px;
+    text-align: center;
+}
+
+section > .musicsArea > .musicDisplay > .malvadao3 > .banner {
+    width: 100%;
+    height: 250px;
+    border-radius: 10px;
+    background-image: url(Assets/MusicBanner/malvadao3.svg);
+    background-size: cover;
+
+}
+
+section > .musicsArea > .musicDisplay > .deusEMeuGuia {
+    width: 25%;
+    height: 350px;
+    margin: 45px;
+    text-align: center;
+}
+
+section > .musicsArea > .musicDisplay > .deusEMeuGuia > .banner {
+    width: 100%;
+    height: 250px;
+    border-radius: 10px;
+    background-image: url(Assets/MusicBanner/deusEMeuGuia.svg);
+    background-size: cover;
+
+}
+
+section > .musicsArea > .musicDisplay > .pandora {
+    width: 25%;
+    height: 350px;
+    margin: 45px;
+    text-align: center;
+}
+
+section > .musicsArea > .musicDisplay > .pandora > .banner {
+    width: 100%;
+    height: 250px;
+    border-radius: 10px;
+    background-image: url(Assets/MusicBanner/pandora.svg);
+    background-size: cover;
+}
+
+section > .musicsArea > .musicDisplay  h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 30px;
+    color: #FFF;
+}
+
+section > .musicsArea > .musicDisplay  h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight:500;
+    color: #FFF;
+}
+
+section > .musicsArea > .musicDisplay  h3 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #FFF;
+}
+
+section > .musicsArea > button {
+    width: 200px;
+    height: 50px;
+    border-radius: 10px;
+    margin: auto;
+    cursor: pointer;
+    background: linear-gradient(90deg, #FD01CF -17.8%, #3A9DB9 126.48%);
+    font-family: 'Poppins', sans-serif;
+    font-size: 22px;
+    color: #FFF;
+}
+
+footer {
+    width: 100%;
+    height: 100px;
+    background-color: #291829;
+    color: #FFF;
+    font-family: 'Poppins', sans-serif;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer > p {
+    margin-left: 20px;
+}
+
+footer > .socialMedia {
+    margin-right: 200px;
+}
+
+footer > .socialMedia > a {
+    text-decoration: none;
+    margin-left: 30px;
+}
