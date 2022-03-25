@@ -27,58 +27,50 @@
                 </div>
             </div>
         </header>
-        <div class="lateralMenu">
-            <img src="Assets/Image/logo.svg" class="logo">
-            <div class="menu">
-                <a href="#"><ion-icon name="home-outline"></ion-icon>Inicio</a>
-                <a href="#"><ion-icon name="person-outline"></ion-icon>Perfil</a>
-                <a href="#"><ion-icon name="contrast-outline"></ion-icon>Noturno</a>
-                <a href="#"><ion-icon name="cog-outline"></ion-icon>Configurção</a>
-                <a href="#"><ion-icon name="exit-outline"></ion-icon>Sair/a>
-            </div>
-            <div class="minhasMusicas">
-                <a href="#"><h2>Minhas músicas</h2></a>
-                <a href="#"><ion-icon name="search-outline"></ion-icon>Pesquisar</a>
-                <a href="#"><ion-icon name="newspaper-outline"></ion-icon>Noticias</a>
-            </div>
-            <div class="playlist">
-                <a href="#"><h2>Playlist</h2></a>
-                <a href="#">Anos 80</a>
-                <a href="#">Romance</a>
-                <a href="#">LO-Fi</a>
-            </div>
-            <button><ion-icon name="musical-notes-outline"></ion-icon>New Playlist</button>
-        </div>
         <section>
             <div class="musicsArea">
                 <h1>Populares</h1>
                 <div class="musicsContainer">
                     <div class="music">
-                        <h2>1</h2>
-                        <img src="#">
-                        <h1>Nome da Musica</h1>
-                        <img src="#">
-                        <h2>03:40</h2>
-                        <img src="#">
+                        <div class="musicDetails">
+                            <h2>1</h2>
+                            <div class="musicBanner"></div>
+                            <h1>Nome da Musica</h1>
+                        </div>
+                        <div class="musicOptions">
+                            <ion-icon class="heart" size="large" name="heart-outline"></ion-icon>
+                            <h2>03:40</h2>
+                            <ion-icon class="options" size="large" name="ellipsis-vertical-outline"></ion-icon>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
-        <div class="playerConatiner">
-            <img src="#">
-            <h1>Nome da musica</h1>
-            <h2>Nome do artista</h2>
-            <div class="player">
-                <div class="playerButtons">
-                    <img src="" class="prev">
-                    <img src="" class="playPause">
-                    <img src="" class="next">
+        <div class="playerContainer">
+            <div class="music">
+                <div class="musicBanner"></div>
+                <div class="about">
+                    <h1>Nome da musica</h1>
+                    <h2>Nome do artista</h2> 
                 </div>
-                <div class="playerVolume">
+            </div>
 
-                </div>
-                <div class="playerProgress">
-                    
+            <div class="player">
+                <div class="musicControl">
+                    <div class="playerButtons">
+                        <ion-icon size="large" class="prev" name="play-back-outline"></ion-icon>
+                        <ion-icon size="large" class="playPause" name="play-outline"></ion-icon>
+                        <ion-icon size="large" class="next" name="play-forward-outline"></ion-icon>
+                        <div class="playerVolume">
+                            <ion-icon size="large" class="volume" name="volume-high-outline"></ion-icon>
+                            <progress></progress>
+                        </div>
+                    </div>
+                    <div class="musicTime">
+                        <h2 class="currentTime">00:00</h2>
+                        <progress></progress>
+                        <h2 class="totalTime">03:40</h2>
+                    </div>
                 </div>
             </div>
         </div>
