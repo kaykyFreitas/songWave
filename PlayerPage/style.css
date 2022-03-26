@@ -173,7 +173,7 @@ section {
     align-items: center;
 }
 
-.playerContainer > .player > .musicControl > .playerButtons > .prev, .playPause, .next {
+.playerContainer > .player > .musicControl > .playerButtons > .prev, .play, .pause, .next {
     cursor: pointer;
 }
 
