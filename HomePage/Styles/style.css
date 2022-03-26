@@ -11,14 +11,15 @@
 }
 
 section {
-    width: 100%;
-    height: 1400px;
     text-align: center;
     background-color: var(--dark-purple);
 }
 
 section > .logo {
     margin-bottom: 30px;
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
 }
 
 section > button {
@@ -143,4 +144,55 @@ section > .musicsArea > button {
     color: #FFF;
 }
 
+@media screen and (max-width: 766px) {
+    @media screen and (min-width: 426px){
+
+        section > h1 {
+            font-size: 29px;
+        }
+
+        section > .musicsArea > h2 {
+            width: 50%;
+            font-size: 20px;
+        }
+
+        section > .musicsArea {
+            display: flex;
+            flex-direction: column;
+            height: 1550px;
+        }
+
+        section > .musicsArea > .musicDisplay {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        section > .musicsArea > .musicDisplay > .malvadao3 {
+            width: 50%;
+            height: 350px;
+            margin: auto;
+            margin-top: 50px;
+            text-align: center;
+        }
+
+        section > .musicsArea > .musicDisplay > .deusEMeuGuia {
+            width: 50%;
+            height: 350px;
+            margin: auto;
+            margin-top: 50px;
+            text-align: center;
+        }
+
+        section > .musicsArea > .musicDisplay > .pandora {
+            width: 50%;
+            height: 350px;
+            margin: auto;
+            margin-top: 50px;
+            text-align: center;
+        }
+
+    }
+}
 
