@@ -34,7 +34,7 @@
                     <div class="music">
                         <div class="musicDetails">
                             <h2>1</h2>
-                            <div class="musicBanner"></div>
+                            <img src="Assets/MusicBanner/malvadao3.svg" class="musicBanner">
                             <h1>Nome da Musica</h1>
                         </div>
                         <div class="musicOptions">
@@ -48,7 +48,7 @@
         </section>
         <div class="playerContainer">
             <div class="music">
-                <div class="musicBanner"></div>
+                <img src="" class="musicBanner musicImage">
                 <div class="about">
                     <h1>Nome da musica</h1>
                     <h2>Nome do artista</h2> 
@@ -64,12 +64,12 @@
                         <ion-icon size="large" class="next" name="play-forward-outline"></ion-icon>
                         <div class="playerVolume">
                             <ion-icon size="large" class="volume" name="volume-high-outline"></ion-icon>
-                            <progress></progress>
+                            <input type="range" min="1" max="100" value="99" class="volumeSlider">
                         </div>
                     </div>
                     <div class="musicTime">
                         <h2 class="currentTime">00:00</h2>
-                        <progress></progress>
+                        <input type="range" min="1" max="100" value="0" class="seek_slider">
                         <h2 class="totalTime">03:40</h2>
                     </div>
                 </div>

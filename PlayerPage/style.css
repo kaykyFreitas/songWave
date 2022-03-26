@@ -7,9 +7,6 @@
     border: 0;
 }
 
-main {
-
-}
 header {
     width: 80%;
     float: right;
@@ -147,7 +144,8 @@ section {
     width: 65px;
     height: 65px;
     border-radius: 10px;
-    background-color: #c4c4c4;
+    background-image: none;
+    background-size: cover;
     margin-right: 15px ;
     margin-left: 20px;
     cursor: pointer;

@@ -2,18 +2,24 @@ import { musics } from './data.js'; //Importing musics database
 
 let music = document.querySelector('audio');
 let musicDuration = document.querySelector('.totalTime');
-let musicBanner = document.querySelector('.musicBanner');
+let musicBanner = document.querySelector('.musicImage');
 let musicName = document.querySelector('.about h1');
 let musicArtist = document.querySelector('.about h2');
 let musicIndex = 0;
 
+let volumeSlider = document.querySelector('.volumeSlider');
+
 musicRender(musicIndex);
+
+
+musicBanner.style.backgroundImage = `url(${musics[musicIndex].image})`;
 
 //Events
 document.querySelector('.play').addEventListener('click', playMusic);
 document.querySelector('.pause').addEventListener('click', pauseMusic);
 music.addEventListener('timeupdate', barAtualize);
-
+volumeSlider.addEventListener('onChange', setVolume);
+ 
 document.querySelector('.prev').addEventListener('click', () => {
     musicIndex--;
     if(musicIndex < 0) {
@@ -69,4 +75,8 @@ function timeConvert(seconds) {
         secondsArea = '0' + secondsArea;
     }
     return `${minutesArea} : ${secondsArea}`;
+}
+
+function setVolume() {
+    music.volume = volumeSlider.value / 100;
 }
