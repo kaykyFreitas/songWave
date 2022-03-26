@@ -1,0 +1,8 @@
+:root {
+    --dark-purple: #1D131D;
+    --medium-purple: #291829;
+    --light-purple: #AB4ABA;
+    --pink: #FD01CF;
+    --light-pink: #FF4970;
+    --button-color: linear-gradient(90deg, #FD01CF -17.8%, #3A9DB9 126.48%);
+}

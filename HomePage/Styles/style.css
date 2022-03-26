@@ -1,5 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-/*font-family: 'Poppins', sans-serif;*/
+@import url(fonts.css);
+@import url(colors.css);
+@import url(Components/header.css);
+@import url(Components/footer.css);
 
 * {
     margin: 0;
@@ -8,55 +10,11 @@
     
 }
 
-header {
-    width: 100%;
-    height: 90px;
-
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    background-color: #291829;
-}
-
-header > a > img  {
-    width: 80px;
-    margin-left: 10px;
-}
-
-header > .menu {
-    width: 90%;
-    margin-right: 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-family: 'Poppins', sans-serif;
-    font-size: 20px;
-}
-
-header > .menu > .nav > a {
-    margin-left: 30px;
-    text-decoration: none;
-    color: #FFF;
-}
-
-header > .menu > .logIn {
-    display: flex;
-    font-family: 'Poppins', sans-serif;
-
-}
-
-header > .menu > .logIn > a {
-    margin: 10px;
-    text-decoration: none;
-    color: #FFF;
-}
-
 section {
     width: 100%;
     height: 1400px;
     text-align: center;
-    background-color: #1D131D;
+    background-color: var(--dark-purple);
 }
 
 section > .logo {
@@ -70,7 +28,7 @@ section > button {
     border-radius: 10px;
     margin: auto;
     cursor: pointer;
-    background: linear-gradient(90deg, #FD01CF -17.8%, #3A9DB9 126.48%);
+    background: var(--button-color);
     font-family: 'Poppins', sans-serif;
     font-size: 22px;
     color: #FFF;
@@ -78,7 +36,7 @@ section > button {
 
 section > h1 {
     margin-top: 100px;
-    color: #FD01CF;
+    color: var(--pink);
     font-family: 'Poppins', sans-serif;
     font-size: 40px;
 }
@@ -86,14 +44,14 @@ section > h1 {
 section > .musicsArea {
     width: 100%;
     height: 600px;
-    background-color: #1D131D;
+    background-color: var(--dark-purple);
 }
 
 section > .musicsArea > h2 {
     margin-top: 100px;
     margin-left: 50px;
     margin-right: 65%;
-    color: #FD01CF;
+    color: var(--pink);
     font-family: 'Poppins', sans-serif;
     font-size: 30px;
 }
@@ -117,7 +75,7 @@ section > .musicsArea > .musicDisplay > .malvadao3 > .banner {
     width: 100%;
     height: 250px;
     border-radius: 10px;
-    background-image: url(Assets/MusicBanner/malvadao3.svg);
+    background-image: url(../Assets/MusicBanner/malvadao3.svg);
     background-size: cover;
 
 }
@@ -133,7 +91,7 @@ section > .musicsArea > .musicDisplay > .deusEMeuGuia > .banner {
     width: 100%;
     height: 250px;
     border-radius: 10px;
-    background-image: url(Assets/MusicBanner/deusEMeuGuia.svg);
+    background-image: url(../Assets/MusicBanner/deusEMeuGuia.svg);
     background-size: cover;
 
 }
@@ -149,7 +107,7 @@ section > .musicsArea > .musicDisplay > .pandora > .banner {
     width: 100%;
     height: 250px;
     border-radius: 10px;
-    background-image: url(Assets/MusicBanner/pandora.svg);
+    background-image: url(../Assets/MusicBanner/pandora.svg);
     background-size: cover;
 }
 
@@ -179,33 +137,10 @@ section > .musicsArea > button {
     border-radius: 10px;
     margin: auto;
     cursor: pointer;
-    background: linear-gradient(90deg, #FD01CF -17.8%, #3A9DB9 126.48%);
+    background: var(--button-color);
     font-family: 'Poppins', sans-serif;
     font-size: 22px;
     color: #FFF;
 }
 
-footer {
-    width: 100%;
-    height: 100px;
-    background-color: #291829;
-    color: #FFF;
-    font-family: 'Poppins', sans-serif;
 
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-footer > p {
-    margin-left: 20px;
-}
-
-footer > .socialMedia {
-    margin-right: 200px;
-}
-
-footer > .socialMedia > a {
-    text-decoration: none;
-    margin-left: 30px;
-}
