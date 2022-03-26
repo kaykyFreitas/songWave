@@ -18,8 +18,22 @@ musicBanner.style.backgroundImage = `url(${musics[musicIndex].image})`;
 document.querySelector('.play').addEventListener('click', playMusic);
 document.querySelector('.pause').addEventListener('click', pauseMusic);
 music.addEventListener('timeupdate', barAtualize);
-volumeSlider.addEventListener('onChange', setVolume);
+volumeSlider.addEventListener('change', setVolume);
+
+document.querySelector('.music').addEventListener('click', () => {
+    playMusic();
+    document.querySelector('.playerContainer').style.display = 'flex'; 
+})
  
+music.addEventListener('ended', () => {
+    musicIndex++;
+    if(musicIndex > musics.length) {
+        musicIndex = 0
+    }
+    musicRender(musicIndex);
+    music.play();
+})
+
 document.querySelector('.prev').addEventListener('click', () => {
     musicIndex--;
     if(musicIndex < 0) {
@@ -31,7 +45,7 @@ document.querySelector('.prev').addEventListener('click', () => {
 
 document.querySelector('.next').addEventListener('click', () => {
     musicIndex++;
-    if(musicIndex > 2) {
+    if(musicIndex > musics.length) {
         musicIndex = 0;
     }
     musicRender(musicIndex);
@@ -62,11 +76,18 @@ function pauseMusic() {
 }
 
 function barAtualize() {
-    let bar = document.querySelector('progress');
-    bar.style.width = Math.floor((music.currentTime / music.duration) * 100) + '%';
+    let bar = document.querySelector('.seekSlider');
+    bar.value = Math.floor((music.currentTime / music.duration) * 100);
     let curTime = document.querySelector('.currentTime');
     curTime.textContent = timeConvert(Math.floor(music.currentTime));
+
+    music.currentTime = bar.duration * (bar.value / 100)
+    let seekPosition = 0;
+    seekPosition = music.currentTime * (100 / music.duration);
+
+    bar.value = seekPosition;
 }
+
 
 function timeConvert(seconds) {
     let minutesArea = Math.floor(seconds / 60);
