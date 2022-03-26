@@ -1,39 +1,17 @@
-let musics = [
-    {
-        title: 'Malavdão 3',
-        artist: 'Xamã',
-        path: 'Audios/malvadao3.mp3',
-        image: 'Assets/MusicBanner/malvadao3.svg',
-    },
-    {
-        title: 'Deus é meu guia',
-        artist: 'Chefin',
-        path: 'Audios/deusEMeuGuia.mp3',
-        image: 'Assets/MusicBanner/deusEMeuGuia.svg',
-    },
-    {
-        title: 'Pandora',
-        artist: 'Matt-D',
-        path: 'Audios/pandora.mp3',
-        image: 'Assets/MusicBanner/pandora.svg',
-    },
-]
-
+import { musics } from './data.js'; //Importing musics database 
 
 let music = document.querySelector('audio');
-let musicIndex = 0;
-
 let musicDuration = document.querySelector('.totalTime');
 let musicBanner = document.querySelector('.musicBanner');
 let musicName = document.querySelector('.about h1');
 let musicArtist = document.querySelector('.about h2');
+let musicIndex = 0;
 
 musicRender(musicIndex);
 
 //Events
 document.querySelector('.play').addEventListener('click', playMusic);
 document.querySelector('.pause').addEventListener('click', pauseMusic);
-
 music.addEventListener('timeupdate', barAtualize);
 
 document.querySelector('.prev').addEventListener('click', () => {
@@ -42,6 +20,7 @@ document.querySelector('.prev').addEventListener('click', () => {
         musicIndex = 2;
     }
     musicRender(musicIndex);
+    music.play();
 });
 
 document.querySelector('.next').addEventListener('click', () => {
@@ -50,10 +29,10 @@ document.querySelector('.next').addEventListener('click', () => {
         musicIndex = 0;
     }
     musicRender(musicIndex);
+    music.play();
 })
 
 //Functions
-
 function musicRender(index) {
     music.setAttribute('src', musics[index].path);
     music.addEventListener('loadeddata', () => {

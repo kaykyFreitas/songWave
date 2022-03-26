@@ -177,6 +177,10 @@ section {
     cursor: pointer;
 }
 
+.playerContainer > .player > .musicControl > .playerButtons > .pause {
+    display: none;
+}
+
 .playerContainer > .player > .musicControl > .playerButtons > .playerVolume {
     display: flex;
     align-items: center;
