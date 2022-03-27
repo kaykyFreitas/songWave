@@ -17,6 +17,42 @@ const musics = [
         path: 'Audios/pandora.mp3',
         image: 'Assets/MusicBanner/pandora.svg',
     },
+    {
+        title: 'Fall away',
+        artist: 'Twenty One pilots',
+        path: 'Audios/fallAway.mp3',
+        image: 'Assets/MusicBanner/fallAway.jpg',
+    },
+    {
+        title: 'Heathens',
+        artist: 'Twenty One pilots',
+        path: 'Audios/heathens.mp3',
+        image: 'Assets/MusicBanner/heathens.jpg',
+    },
+    {
+        title: 'Legend',
+        artist: 'Twenty One pilots',
+        path: 'Audios/legend.mp3',
+        image: 'Assets/MusicBanner/legend.jpg',
+    },
+    {
+        title: 'My blood',
+        artist: 'Twenty One pilots',
+        path: 'Audios/myBlood.mp3',
+        image: 'Assets/MusicBanner/myBlood.jpg',
+    },
+    {
+        title: 'Ride',
+        artist: 'Twenty One pilots',
+        path: 'Audios/ride.mp3',
+        image: 'Assets/MusicBanner/ride.jpg',
+    },
+    {
+        title: 'Stressed out',
+        artist: 'Twenty One pilots',
+        path: 'Audios/stressedOut.mp3',
+        image: 'Assets/MusicBanner/stressedOut.jpg',
+    },
 ]
 
 export { musics };
