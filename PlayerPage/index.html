@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>songWave</title>
+</head>
+<body>
+    <main>
+        <header>
+            <nav>
+                <div class="userArea">
+                    <a href="#"><ion-icon name="person-circle-outline"></ion-icon></a>
+                    <h2>Nome do usuario</h2>
+                    <a href=""><ion-icon name="notifications-outline"></ion-icon></a>
+                </div>
+            </nav>
+            <div class="banner">
+                <div class="bannerContent">
+                    <h1>Nome do musico</h1>
+                    <h2>Tranding music</h2>
+                    <button>Follow</button>
+                </div>
+            </div>
+        </header>
+        <section>
+            <div class="musicsArea">
+                <h1>Populares</h1>
+                <div class="musicsContainer">
+                    <div class="music">
+                        <div class="musicDetails">
+                            <h2>1</h2>
+                            <img src="Assets/MusicBanner/malvadao3.svg" class="musicBanner">
+                            <h1>Nome da Musica</h1>
+                        </div>
+                        <div class="musicOptions">
+                            <ion-icon class="heart" size="large" name="heart-outline"></ion-icon>
+                            <h2>03:40</h2>
+                            <ion-icon class="options" size="large" name="ellipsis-vertical-outline"></ion-icon>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="playerContainer">
+            <div class="music">
+                <img src="" class="musicBanner musicImage">
+                <div class="about">
+                    <h1>Nome da musica</h1>
+                    <h2>Nome do artista</h2> 
+                </div>
+            </div>
+
+            <div class="player">
+                <div class="musicControl">
+                    <div class="playerButtons">
+                        <ion-icon size="large" class="prev" name="play-back-outline"></ion-icon>
+                        <ion-icon size="large" class="play" name="play-outline"></ion-icon>
+                        <ion-icon size="large" class="pause" name="pause-outline"></ion-icon>
+                        <ion-icon size="large" class="next" name="play-forward-outline"></ion-icon>
+                        <div class="playerVolume">
+                            <ion-icon size="large" class="volume" name="volume-high-outline"></ion-icon>
+                            <input type="range" min="1" max="100" value="100" class="volumeSlider">
+                        </div>
+                    </div>
+                    <div class="musicTime">
+                        <h2 class="currentTime">00:00</h2>
+                        <input type="range" min="1" max="100" value="0" class="seekSlider">
+                        <h2 class="totalTime">03:40</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <audio src=""></audio>
+
+    <script type="module" src="main.js"></script>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
