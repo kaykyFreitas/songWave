@@ -1,0 +1,83 @@
+  
+  input[type=radio] {
+    display: none;
+  }
+  
+  body{
+    background-color: #1D131D;
+  }
+
+  .container {
+    position: relative;
+    margin-left: 20%;
+    width: 80%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    transform-style: preserve-3d;
+    justify-content: center;
+    z-index: 0;
+
+    transition: all 0.4s ease-in;
+  }
+
+  .cards{
+      position: relative;
+      width: 100%;
+      height: 80%; 
+  }
+
+  .card{
+      position: absolute;
+      width: 90%;
+      height: 90%;
+      display: flex;
+      left: 0;
+      right: 0;
+      object-fit: cover;
+      border-radius: 40px;
+      margin: auto;
+
+      transition: all 0.4s ease-in;
+
+      border: none;
+  }
+
+  .img_slide{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 40px;
+  }
+
+  #item-1:checked ~ .cards #song-3,
+  #item-2:checked ~ .cards #song-1,
+  #item-3:checked ~ .cards #song-2{
+      transform: translateX(-15%) scale(0.8);
+      opacity: 0.4;
+      z-index: 0;
+    }
+
+  #item-1:checked ~ .cards #song-2,
+  #item-2:checked ~ .cards #song-3,
+  #item-3:checked ~ .cards #song-1{
+      transform: translateX(15%) scale(0.8);
+      opacity: 0.4;
+      z-index: 0;
+  }
+
+  #item-1:checked ~ .cards #song-1,
+  #item-2:checked ~ .cards #song-2,
+  #item-3:checked ~ .cards #song-3{
+      transform: translateX(0) scale(1) ;
+      opacity: 1;
+      z-index: 1;
+  }
+
+
+
+  @media screen and (max-width: 768px) {
+      .container{
+        display: none;
+      }
+  }

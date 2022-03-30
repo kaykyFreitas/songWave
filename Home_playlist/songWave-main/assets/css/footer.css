@@ -1,6 +1,16 @@
+:root {
+    --dark-purple: #1D131D;
+    --medium-purple: #291829;
+    --light-purple: #AB4ABA;
+    --pink: #FD01CF;
+    --light-pink: #FF4970;
+    --button-color: linear-gradient(90deg, #FD01CF -17.8%, #3A9DB9 126.48%);
+}
+
 footer {
-    width: 100%;
+    width: 80%;
     height: 100px;
+    
     background-color: var(--medium-purple);
     color: #FFF;
     font-family: 'Poppins', sans-serif;
@@ -8,7 +18,7 @@ footer {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin: auto;
+    margin-left: 20%;
 }
 
 footer > p {
@@ -28,6 +38,11 @@ footer > .socialMedia > a {
 
 @media screen and (max-width: 766px) {
     @media screen and (min-width: 426px){
+
+        footer{
+            width: 100%;
+            margin-left: 0;
+        }
 
         footer > .socialMedia {
             margin: auto;

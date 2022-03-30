@@ -1,56 +1,71 @@
 header {
     width: 100%;
-    height: 90px;
+    height: auto;
 
     display: flex;
     justify-content: space-between;
     align-items: center;
+    
 
     background-color: var(--medium-purple);
+
+    overflow: hidden;
 }
 
 header > a > img  {
-    width: 80px;
-    margin-left: 1.5%;
+    width: 100px;
+    margin-left: 20px;
 }
 
 header > .menu {
     width: 85%;
-    margin-right: 1%;
+    
     display: flex;
     justify-content: space-between;
     align-items: center;
     font-family: 'Poppins', sans-serif;
-    font-size: 20px;
+    font-size: 15px;
 }
 
 header > .menu > .nav {
-    width: 40%;
+    width: 100%;
 } 
 
 header > .menu > .nav > a {
-    margin-left: 20px;
+    padding-left: 50px;
     text-decoration: none;
-    color: #FFF;
+    color: #fff;
+    
+    transition: all 0.2s ease-in;
+    flex-wrap: nowrap;
+}
+
+header .menu .nav a:hover{
+    color: #bfbfbf;
 }
 
 header > .menu > .logIn {
     display: flex;
     font-family: 'Poppins', sans-serif;
-
+    margin-right: 40px;
 }
 
 header > .menu > .logIn > a {
-    margin: 15px;
+    margin: 0 15px;
     text-decoration: none;
     color: #FFF;
+    transition: all 0.2s ease-out;
+}
+
+header > .menu > .logIn > a:hover{
+    color: #d6d4d4;
 }
 
 @media screen and (max-width: 766px) {
     @media screen and (min-width: 426px){
 
         header > a > img {
-            width: 50px;
+            width: 70px;
         }
 
         header > .menu {
@@ -59,7 +74,8 @@ header > .menu > .logIn > a {
 
         header > .menu > .nav > a {
             font-size: 12px;
+            display: inline;
+            flex-direction: row;
         }
-
     }
 }
