@@ -6,43 +6,256 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="Assets/css/reset.css">
+    <link rel="stylesheet" href="Assets/css/playerNav.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@700&family=Montserrat:wght@300;400;700&family=Open+Sans:wght@300;400;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
 
     <title>songWave</title>
 </head>
 <body>
-    <main>
-        <header>
-            <nav>
-                <div class="userArea">
-                    <a href="#"><ion-icon name="person-circle-outline"></ion-icon></a>
-                    <h2>Nome do usuario</h2>
-                    <a href=""><ion-icon name="notifications-outline"></ion-icon></a>
+
+    <div class="navBarContainer">
+        <header class="cabecalho">
+            <section class="perfil">
+                <p class="nome_perfil">Gustavo Martins</p>
+                <button class="config_perfil"><ion-icon name="chevron-down-outline"></ion-icon></button>
+                <div class="barra_lateral"></div>
+                <button class="cabecalho__notificacao" aria-label="Notificação">
+                    <ion-icon name="notifications-outline"></ion-icon></ion-icon>
+                </button>
+    
+                <article class="menu_mobile">
+                    <button class="menu"> <ion-icon name="menu-outline"></ion-icon></button>
+                    <img src="Assets/Image/Song Wave logo.svg" alt="" class="logowave_mobile">
+                    <button class="notificacao_mobile"> <ion-icon name="notifications-outline"></ion-icon></button>
+                </article>
+                
+            </section>
+        </header>  
+    
+        <section class="navigation-bar menu-lateral--ativo">
+            <nav class="navigation">
+                <div class="logo_songwave--navigation">
+                    <a href="#">
+                        <img src="Assets/Image/Song Wave logo.svg" alt="Logo" class="logo_songWave">
+                    </a>
                 </div>
+                    <ul class="list">
+                        <li class="list-navigation ">
+                            <a href="#" class="link-navigation active">
+                                <span class="icon"><ion-icon name="home-outline"></ion-icon></span>
+                                <span class="Icon-title">Início</span>
+                            </a>
+                        </li>
+                        <li class="list-navigation">
+                            <a href="#" class="link-navigation">
+                                <span class="icon"><ion-icon name="person-outline"></ion-icon></span>
+                                <span class="Icon-title">Perfil</span>
+                            </a>
+                        </li>
+                        <li class="list-navigation">
+                            <a href="#" class="link-navigation">
+                                <span class="icon"><ion-icon name="moon-outline"></ion-icon></span>
+                                <span class="Icon-title">Noturno</span>
+                            </a>
+                        </li>
+                        <li class="list-navigation">
+                            <a href="#" class="link-navigation">
+                                <span class="icon"><ion-icon name="settings-outline"></ion-icon></span>
+                                <span class="Icon-title">Configurações</span>
+                            </a>
+                        </li>
+        
+                        <li class="list-navigation sub-titulo">
+                            <span class="sub-titulo_navigation">Minhas musicas</span>
+                        </li>
+        
+                        <li class="list-navigation">
+                            <a href="#" class="link-navigation">
+                                <span class="icon"><ion-icon name="search-outline"></ion-icon></span>
+                                <span class="Icon-title">Pesquisas</span>
+                            </a>
+                        </li>
+        
+                        <li class="list-navigation">
+                            <a href="#" class="link-navigation">
+                                <span class="icon"><ion-icon name="newspaper-outline"></ion-icon></span>
+                                <span class="Icon-title">Noticias</span>
+                            </a>
+                        </li>
+        
+                        <li class="list-navigation sub-titulo">
+                            <span class="sub-titulo_navigation">Playlist</span>
+                        </li>
+        
+                        <li class="list-navigation">
+                            <a href="#" class="link-navigation">
+                                <span class="Icon-title">Anos 80</span>
+                            </a>
+                        </li>
+        
+                        <li class="list-navigation">
+                            <a href="#" class="link-navigation">
+                                <span class="Icon-title">Romance</span>
+                            </a>
+                        </li>
+        
+                        <li class="list-navigation">
+                            <a href="#" class="link-navigation">
+                                <span class="Icon-title">Lo-fi</span>
+                            </a>
+                        </li>
+    
+                        <li class="new_playlist">
+                            <a href="#" class="new_playlist_conteudo">
+                                <span class="icon_playlist"><ion-icon name="add-circle-outline"></ion-icon></span>
+                                <span class="Icon-title_playlist">Nova Playlist</span>
+                            </a>
+                        </li>
+                       
+                    </ul>
             </nav>
-            <div class="banner">
-                <div class="bannerContent">
-                    <h1>Nome do musico</h1>
-                    <h2>Tranding music</h2>
-                    <button>Follow</button>
-                </div>
-            </div>
-        </header>
-        <section>
+        </section>
+    </div>
+
+
+
+    <main>
+        
+        <div class="pageBanner">
+
+        </div>
+
+        <section class="musicSection">
             <div class="musicsArea">
                 <h1>Populares</h1>
                 <div class="musicsContainer">
                     <div class="music">
+
+                    <!-- Inicio area de musicas-->
+                    
                         <div class="musicDetails">
                             <h2>1</h2>
-                            <img src="Assets/MusicBanner/malvadao3.svg" class="musicBanner">
-                            <h1>Nome da Musica</h1>
+                            <img src="https://linkstorage.linkfire.com/medialinks/images/632db6f2-94a2-466a-8d33-68bd852441e4/artwork-440x440.jpg" class="musicBanner">
+                            <h1>XXI</h1>
                         </div>
                         <div class="musicOptions">
                             <ion-icon class="heart" size="large" name="heart-outline"></ion-icon>
-                            <h2>03:40</h2>
+                            <h2>02:40</h2>
                             <ion-icon class="options" size="large" name="ellipsis-vertical-outline"></ion-icon>
                         </div>
                     </div>
+
+                    <div class="music">
+                        <div class="musicDetails">
+                            <h2>2</h2>
+                            <img src="https://linkstorage.linkfire.com/medialinks/images/fc7680fa-4265-4f09-bcdc-421f0c9bd0f9/artwork-440x440.jpg" class="musicBanner">
+                            <h1>Whatever</h1>
+                        </div>
+                        <div class="musicOptions">
+                            <ion-icon class="heart" size="large" name="heart-outline"></ion-icon>
+                            <h2>03:25</h2>
+                            <ion-icon class="options" size="large" name="ellipsis-vertical-outline"></ion-icon>
+                        </div>
+                    </div>
+
+                    <div class="music">
+                        <div class="musicDetails">
+                            <h2>3</h2>
+                            <img src="https://linkstorage.linkfire.com/medialinks/images/079bd53d-1d24-4f46-b8fa-4a336c281f30/artwork-440x440.jpg" class="musicBanner">
+                            <h1>Odyssey</h1>
+                        </div>
+                        <div class="musicOptions">
+                            <ion-icon class="heart" size="large" name="heart-outline"></ion-icon>
+                            <h2>02:20</h2>
+                            <ion-icon class="options" size="large" name="ellipsis-vertical-outline"></ion-icon>
+                        </div>
+                    </div>
+
+                    <div class="music">
+                        <div class="musicDetails">
+                            <h2>4</h2>
+                            <img src="https://linkstorage.linkfire.com/medialinks/images/bea85988-7b0d-4e2b-a4d9-cedf7df36de8/artwork-440x440.jpg" class="musicBanner">
+                            <h1>Lets Run Away</h1>
+                        </div>
+                        <div class="musicOptions">
+                            <ion-icon class="heart" size="large" name="heart-outline"></ion-icon>
+                            <h2>02:26</h2>
+                            <ion-icon class="options" size="large" name="ellipsis-vertical-outline"></ion-icon>
+                        </div>
+                    </div>
+
+                    <div class="music">
+                        <div class="musicDetails">
+                            <h2>5</h2>
+                            <img src="https://linkstorage.linkfire.com/medialinks/images/1e14b2bc-be4b-440c-9060-1d840d0d72da/artwork-440x440.jpg" class="musicBanner">
+                            <h1>Royalty</h1>
+                        </div>
+                        <div class="musicOptions">
+                            <ion-icon class="heart" size="large" name="heart-outline"></ion-icon>
+                            <h2>02:43</h2>
+                            <ion-icon class="options" size="large" name="ellipsis-vertical-outline"></ion-icon>
+                        </div>
+                    </div>
+
+                    <div class="music">
+                        <div class="musicDetails">
+                            <h2>6</h2>
+                            <img src="https://linkstorage.linkfire.com/medialinks/images/a5753b66-07c9-476c-9f9b-a79761cc3a48/artwork-440x440.jpg" class="musicBanner">
+                            <h1>CTRL Z</h1>
+                        </div>
+                        <div class="musicOptions">
+                            <ion-icon class="heart" size="large" name="heart-outline"></ion-icon>
+                            <h2>03:00</h2>
+                            <ion-icon class="options" size="large" name="ellipsis-vertical-outline"></ion-icon>
+                        </div>
+                    </div>
+
+                    <div class="music">
+                        <div class="musicDetails">
+                            <h2>7</h2>
+                            <img src="https://linkstorage.linkfire.com/medialinks/images/99ad2da2-13c9-40aa-b59d-54eea0886297/artwork-440x440.jpg" class="musicBanner">
+                            <h1>Numb The Pain</h1>
+                        </div>
+                        <div class="musicOptions">
+                            <ion-icon class="heart" size="large" name="heart-outline"></ion-icon>
+                            <h2>02:33</h2>
+                            <ion-icon class="options" size="large" name="ellipsis-vertical-outline"></ion-icon>
+                        </div>
+                    </div>
+
+                    <div class="music">
+                        <div class="musicDetails">
+                            <h2>8</h2>
+                            <img src="https://linkstorage.linkfire.com/medialinks/images/7438735b-7816-415a-b3bb-985b6a3f930b/artwork-440x440.jpg" class="musicBanner">
+                            <h1>Phoenix</h1>
+                        </div>
+                        <div class="musicOptions">
+                            <ion-icon class="heart" size="large" name="heart-outline"></ion-icon>
+                            <h2>03:58</h2>
+                            <ion-icon class="options" size="large" name="ellipsis-vertical-outline"></ion-icon>
+                        </div>
+                    </div>
+
+                    <div class="music">
+                        <div class="musicDetails">
+                            <h2>9</h2>
+                            <img src="https://linkstorage.linkfire.com/medialinks/images/52a4a711-b81f-4a67-b0c8-aad2427ad127/artwork-440x440.jpg" class="musicBanner">
+                            <h1>21</h1>
+                        </div>
+                        <div class="musicOptions">
+                            <ion-icon class="heart" size="large" name="heart-outline"></ion-icon>
+                            <h2>03:30</h2>
+                            <ion-icon class="options" size="large" name="ellipsis-vertical-outline"></ion-icon>
+                        </div>
+                    </div>
+
+                    <!-- Fim area de musicas-->
+
                 </div>
             </div>
         </section>
@@ -78,6 +291,7 @@
     </main>
     <audio src=""></audio>
 
+    <script src="navbar.js"></script>
     <script type="module" src="main.js"></script>
 
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>

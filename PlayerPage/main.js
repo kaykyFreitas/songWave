@@ -20,7 +20,7 @@ document.querySelector('.pause').addEventListener('click', pauseMusic);
 music.addEventListener('timeupdate', barAtualize);
 volumeSlider.addEventListener('change', setVolume);
 
-document.querySelector('.music').addEventListener('click', () => {
+document.querySelector('.musicBanner').addEventListener('click', () => {
     playMusic();
     document.querySelector('.playerContainer').style.display = 'flex'; 
 })
@@ -37,7 +37,7 @@ music.addEventListener('ended', () => {
 document.querySelector('.prev').addEventListener('click', () => {
     musicIndex--;
     if(musicIndex < 0) {
-        musicIndex = 2;
+        musicIndex = musics.length;
     }
     musicRender(musicIndex);
     music.play();
