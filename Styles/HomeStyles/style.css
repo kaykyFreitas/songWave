@@ -1,5 +1,5 @@
 @import url(fonts.css);
-@import url(colors.css);
+@import url(../colors.css);
 @import url(header.css);
 @import url(footer.css);
 
@@ -15,7 +15,7 @@ body::-webkit-scrollbar{
 }
 
 body::-webkit-scrollbar-thumb{
-    background-color: #753475;
+    background-color: var(--high-purple);
     border-radius: 45px;
 }
 
@@ -41,12 +41,12 @@ section > button {
     background: var(--button-color);
     font-family: 'Poppins', sans-serif;
     font-size: 22px;
-    color: #FFF;
+    color: var(--white);
 }
 
 section > button > a {
     text-decoration: none;
-    color: #FFF;
+    color: var(--white);
 }
 
 section > h1 {
@@ -129,21 +129,21 @@ section > .musicsArea > .musicDisplay > .pandora > .banner {
 section > .musicsArea > .musicDisplay  h1 {
     font-family: 'Poppins', sans-serif;
     font-size: 30px;
-    color: #FFF;
+    color: var(--white);
 }
 
 section > .musicsArea > .musicDisplay  h2 {
     font-family: 'Poppins', sans-serif;
     font-size: 16px;
     font-weight:500;
-    color: #FFF;
+    color: var(--white);
 }
 
 section > .musicsArea > .musicDisplay  h3 {
     font-family: 'Poppins', sans-serif;
     font-size: 14px;
     font-weight: 400;
-    color: #FFF;
+    color: var(--white);
 }
 
 section > .musicsArea > button {
@@ -155,12 +155,12 @@ section > .musicsArea > button {
     background: var(--button-color);
     font-family: 'Poppins', sans-serif;
     font-size: 22px;
-    color: #FFF;
+    color: var(--white);
 }
 
 section > .musicsArea > button > a {
     text-decoration: none;
-    color: #FFF;
+    color: var(--white);
 }
 
 @media screen and (max-width: 766px) {

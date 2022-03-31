@@ -1,4 +1,4 @@
-
+@import url(../colors.css);
 
 body{
     font-family: 'Poppins', sans-serif;
@@ -16,20 +16,20 @@ body::-webkit-scrollbar{
 }
 
 body::-webkit-scrollbar-thumb{
-    background-color: #753475;
+    background-color: var(--high-purple);
     border-radius: 45px;
 }
 
 .cabecalho{
     position: fixed;
-    background-color: #291829;
+    background-color: var(--medium-purple);
     width: 80%;
     box-sizing: border-box;
     padding-top: 32px;
     padding-bottom: 32px;
     padding-right: 70px;
     right: 0;
-    border-left: 1.5px solid #fff;
+    border-left: 1.5px solid var(--white);
     transition: all 0.5s;
 
     top: 0;
@@ -44,7 +44,7 @@ body::-webkit-scrollbar-thumb{
     align-items: center;
 
     box-sizing: border-box;
-    color: #fff;
+    color: var(--white);
 
     animation-name: header;
     animation-duration: 1s;
@@ -75,7 +75,7 @@ body::-webkit-scrollbar-thumb{
 }
 
 .barra_lateral{
-    background-color: #fff;
+    background-color: var(--white);
     width: 3px;
     height: 50px;
 }
@@ -89,13 +89,13 @@ body::-webkit-scrollbar-thumb{
 }
 
 .navigation-bar{
-    background-color: #291829;
+    background-color: var(--medium-purple);
     width: 20%;
     height: 100vh;
 
     position: fixed;
 
-    color: #fff;
+    color: var(--white);
     box-sizing: border-box;
     transition: all 0.5s;
 
@@ -113,7 +113,7 @@ body::-webkit-scrollbar-thumb{
 }
 
 .navigation-bar::-webkit-scrollbar-thumb{
-    background-color: #753475;
+    background-color: var(--high-purple);
     border-radius: 45px;
 }
 
@@ -146,7 +146,7 @@ body::-webkit-scrollbar-thumb{
     opacity: 100%;
     font-size: 1rem;
 
-    color: #BBBABA;
+    color: var(--light-grey);
     white-space: normal;
     box-sizing: border-box;
    
@@ -172,7 +172,7 @@ body::-webkit-scrollbar-thumb{
 }
 
 .navigation-bar .navigation .list .list-navigation .active {
-    color: #fff;
+    color: var(--white);
     padding-left: 30px;
 }
 
@@ -190,20 +190,20 @@ body::-webkit-scrollbar-thumb{
 
 .sub-titulo{
     font-size: 1.5rem;
-    color: #FF4970;
+    color: var(light-pink);
 
     text-align: center;
 }
 
 
 .link-navigation:hover{
-    color: #fff;
+    color: var(--white);
     transition: all 0.3s ease-in-out;
 }
 
 
 .new_playlist{
-   border: 2px solid #BBBABA;
+   border: 2px solid var(--light-grey);
    padding-top: 15px;
    padding-bottom: 15px;
    border-radius: 8px;
@@ -215,7 +215,7 @@ body::-webkit-scrollbar-thumb{
 }
 
 .new_playlist_conteudo{
-    color: #BBBABA;
+    color: var(--light-grey);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -227,7 +227,7 @@ body::-webkit-scrollbar-thumb{
 }
 
 .new_playlist :hover{
-    color: #fff;
+    color: var(--white);
     transition: all 0.3s ease-in-out;
 }
 

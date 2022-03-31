@@ -31,7 +31,7 @@ header > .menu > .nav {
 header > .menu > .nav > a {
     margin-left: 20px;
     text-decoration: none;
-    color: #FFF;
+    color: var(--white);
 }
 
 header > .menu > .logIn {
@@ -43,7 +43,7 @@ header > .menu > .logIn {
 header > .menu > .logIn > a {
     margin: 15px;
     text-decoration: none;
-    color: #FFF;
+    color: var(--white);
 }
 
 @media screen and (max-width: 766px) {

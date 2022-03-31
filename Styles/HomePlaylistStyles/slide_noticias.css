@@ -1,3 +1,5 @@
+@import url(../colors.css);
+
 .noticia{
     width: 80%;
     
@@ -8,7 +10,7 @@
 .btn_noticia{
     display: flex;
     justify-content: flex-end;
-    color: #fff;
+    color: var(--white);
     
     font-size: 2.15rem;
 }
@@ -30,7 +32,7 @@
 
 .noticias_titulo{
     font-size: 2.25rem;
-    color: #fff;
+    color: var(--white);
     font-weight: 600;
 
     padding-left: 50px;
@@ -56,7 +58,7 @@
 }
 
 .gallery::-webkit-scrollbar-thumb{
-    background-color: blueviolet;
+    background-color: var(--high-purple);
 }
 
 .gallery li img{
