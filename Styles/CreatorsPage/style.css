@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url(color.css);
+@import url(header.css);
+@import url(footer.css);
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    
+}
+
+section {
+    text-align: center;
+    background-color: var(--dark-purple);
+}
+
+section > .logo {
+    margin-bottom: 30px;
+    width: 100%;
+    height: 600px;
+    overflow: hidden;
+}
+
+.gustavo{
+        position:absolute;
+        width:17%;
+        height:34.3%;
+        background-image: url(../../Assets/Images/Creators/gustavo.png);
+        background-size: contain;
+        top:27%;
+        left:10%;
+        float:right;
+        background-repeat:no-repeat;
+     }
+     .criadores{
+        position:absolute;
+        top:100px;
+        color: var(--pink);
+        font-family: sans-serif;
+        left:45%;
+        font-weight: bold;
+        font-size: 30px;
+       
+    
+     }
+     .leticia{
+        position:absolute;
+        width:17%;
+        height:34.3%;
+        background-image: url(../../Assets/Images/Creators/leticia.png);
+        background-size: contain;
+        top:27%;
+        left:42%;
+        float:right;
+        background-repeat:no-repeat;
+     
+     }
+     h1{
+        position:absolute;
+        color:#fff;
+        font-family: 'Poppins', sans-serif;
+        font-size: 17px;
+        top:62%;
+        left:45.5%;
+
+     }
+     .kayky{
+        position:absolute;
+        width:17%;
+        height:34.3%;
+        background-image: url(../../Assets/Images/Creators/Kayky.png);
+        background-size: contain;
+        top:27%;
+        left:73%;
+        float:right;
+        background-repeat:no-repeat;
+     }
+     h2{
+        position:absolute;
+        color:#fff;
+        font-family: 'Poppins', sans-serif;
+        font-size: 17px;
+        top:62%;
+        left:77%;
+
+     }
+     h3{
+         position:absolute;
+        color:#fff;
+        font-family: 'Poppins', sans-serif;
+        font-size: 17px;
+        top:62%;
+        left:13%;
+     }
+     .karina{
+
+        position:absolute;
+        width:17%;
+        height:34.3%;
+        background-image: url(../../Assets/Images/Creators/karina.png);
+        background-size: contain;
+        top:70%;
+        left:10%;
+        float:right;
+        background-repeat:no-repeat;
+     }
+h4{
+    position:absolute;
+   color:#fff;
+   font-family: 'Poppins', sans-serif;
+   font-size: 17px;
+   top:105%;
+   left:14%;
+}
+.guilherme{
+    position:absolute;
+    width:17%;
+    height:34.3%;
+    background-image: url(../../Assets/Images/Creators/guilherme.png);
+    background-size: contain;
+    top:70%;
+    left:73%;
+    float:right;
+    background-repeat:no-repeat;
+}
+h5{
+    position:absolute;
+    color:#fff;
+    font-family: 'Poppins', sans-serif;
+    font-size: 17px;
+    top:105%;
+    left:76%;
+
+
+}
+.bruno{
+    position:absolute;
+    width:17%;
+    height:34.3%;
+    background-image: url(../../Assets/Images/Creators/bruno.png);
+    background-size: contain;
+    top:70%;
+    left:43%;
+    float:right;
+    background-repeat:no-repeat;
+}
+h6{
+    position:absolute;
+    color:#fff;
+    font-family: 'Poppins', sans-serif;
+    font-size: 17px;
+    top:105%;
+    left:46%;
+
+ }
