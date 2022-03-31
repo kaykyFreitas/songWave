@@ -10,48 +10,113 @@
     
 }
 
+body{
+    font-family: 'Poppins', sans-serif;
+    overflow: scroll;
+    transition: all 0.3s ease-out;
+}
+
+body::-webkit-scrollbar{
+    width: 8px;
+}
+
+body::-webkit-scrollbar-thumb{
+    background-color: #753475;
+    border-radius: 45px;
+}
+
 section {
     text-align: center;
     background-color: var(--dark-purple);
+    overflow: hidden;
+    
 }
 
 section > .logo {
+    position: relative;
     margin-bottom: 30px;
     width: 100%;
-    height: 400px;
+    
+    height: auto;
     overflow: hidden;
 }
 
-section > button {
-    width: 180px;
-    height: 40px;
+
+.mainLogo{
+    margin-top: 40px;
+}
+
+ .effect_ball{
+    position: absolute;
+    top: -220px;
+    right: -120px;
+    transform: rotate(345deg);
+}
+
+.effect_ball--bottom{
+    position: absolute;
+    left: -170px;
+    bottom: -135px;
+}
+
+
+.btn{
+    width: 280px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin-top: 50px;
-    border-radius: 10px;
-    margin: auto;
+    border-radius: 35px;
+    margin: 0 auto;
     cursor: pointer;
     background: var(--button-color);
     font-family: 'Poppins', sans-serif;
     font-size: 22px;
     color: #FFF;
+    transition: all 0.2s ease-out;
 }
 
+.btn:hover{
+    opacity: 60%;
+    width: 270px;
+}
+
+.comece_ja{
+    box-sizing: border-box;
+    margin-top: 50px;
+    margin-bottom: 160px;
+}
+
+
 section > h1 {
-    margin-top: 100px;
+    width: 90%;
+    
+    margin: auto;
     color: var(--pink);
     font-family: 'Poppins', sans-serif;
     font-size: 40px;
+    
+    padding-top: 100px;
+    padding-bottom: 80px;
+    border-bottom: 2.25px solid #6D24CF;
+
 }
+
 
 section > .musicsArea {
     width: 100%;
     height: 600px;
     background-color: var(--dark-purple);
+
+    margin-bottom: 40px;
+    
+    margin-top: 100px;
 }
 
 section > .musicsArea > h2 {
-    margin-top: 100px;
-    margin-left: 50px;
-    margin-right: 65%;
+    text-align: start;
+    margin-left: 100px;
     color: var(--pink);
     font-family: 'Poppins', sans-serif;
     font-size: 30px;
@@ -59,15 +124,13 @@ section > .musicsArea > h2 {
 
 section > .musicsArea > .musicDisplay {
     width: 100%;
-
-
     display: flex;
     justify-content: center;
 }
 
 section > .musicsArea > .musicDisplay > .malvadao3 {
     width: 25%;
-    height: 350px;
+    height: auto;
     margin: 45px;
     text-align: center;
 }
@@ -78,12 +141,12 @@ section > .musicsArea > .musicDisplay > .malvadao3 > .banner {
     border-radius: 10px;
     background-image: url(../Assets/MusicBanner/malvadao3.svg);
     background-size: cover;
-
+    background-repeat: no-repeat;
 }
 
 section > .musicsArea > .musicDisplay > .deusEMeuGuia {
     width: 25%;
-    height: 350px;
+    height: auto;
     margin: 45px;
     text-align: center;
 }
@@ -94,7 +157,7 @@ section > .musicsArea > .musicDisplay > .deusEMeuGuia > .banner {
     border-radius: 10px;
     background-image: url(../Assets/MusicBanner/deusEMeuGuia.svg);
     background-size: cover;
-
+    background-repeat: no-repeat;
 }
 
 section > .musicsArea > .musicDisplay > .pandora {
@@ -110,6 +173,7 @@ section > .musicsArea > .musicDisplay > .pandora > .banner {
     border-radius: 10px;
     background-image: url(../Assets/MusicBanner/pandora.svg);
     background-size: cover;
+    background-repeat: no-repeat;
 }
 
 section > .musicsArea > .musicDisplay  h1 {
@@ -132,20 +196,8 @@ section > .musicsArea > .musicDisplay  h3 {
     color: #FFF;
 }
 
-section > .musicsArea > button {
-    width: 200px;
-    height: 50px;
-    border-radius: 10px;
-    margin: auto;
-    cursor: pointer;
-    background: var(--button-color);
-    font-family: 'Poppins', sans-serif;
-    font-size: 22px;
-    color: #FFF;
-}
-
 @media screen and (max-width: 766px) {
-    @media screen and (min-width: 426px){
+    @media screen and (min-width: 300px){
 
         section > h1 {
             font-size: 29px;
@@ -159,7 +211,7 @@ section > .musicsArea > button {
         section > .musicsArea {
             display: flex;
             flex-direction: column;
-            height: 1550px;
+            height: 100%;
         }
 
         section > .musicsArea > .musicDisplay {
@@ -191,6 +243,30 @@ section > .musicsArea > button {
             margin: auto;
             margin-top: 50px;
             text-align: center;
+        }
+
+       .comece_ja{
+            margin-bottom: 10px;
+       }
+        
+        .mainLogo{
+            margin-top: 50px;
+            width: 250px;
+        }
+
+        .effect_ball{
+            display: none;
+        }
+
+        .effect_ball--bottom{
+            display: none;
+        }
+
+        .btn{
+            margin-top: 30px;
+            width: 180px;
+            height: 50px;
+            font-size: 1rem;
         }
 
     }
