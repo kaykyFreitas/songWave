@@ -10,6 +10,15 @@
     
 }
 
+body::-webkit-scrollbar{
+   width: 8px;
+}
+
+body::-webkit-scrollbar-thumb{
+   background-color: #753475;
+   border-radius: 45px;
+}
+
 section {
     text-align: center;
     background-color: var(--dark-purple);

@@ -40,6 +40,15 @@
 	box-sizing: border-box;
 }
 
+body::-webkit-scrollbar{
+  width: 8px;
+}
+
+body::-webkit-scrollbar-thumb{
+  background-color: #753475;
+  border-radius: 45px;
+}
+
 body, html {
 	height: 100%;
 	font-family: Poppins-Regular, sans-serif;
