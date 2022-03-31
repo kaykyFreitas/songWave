@@ -84,6 +84,12 @@ body::-webkit-scrollbar-thumb{
     align-items: center;
 }
 
+.switchTheme > a > input[type=checkbox] {
+    visibility: hidden;
+    height: 0;
+    width: 0;
+}
+
 .navigation-bar{
     background-color: var(--medium-purple);
     width: 20%;
@@ -144,7 +150,7 @@ body::-webkit-scrollbar-thumb{
 }
 
 .navigation-bar .navigation .list .list-navigation .active{
-    background: linear-gradient(to right, #af43b3, #291829);
+    background: linear-gradient(to right, var(--linear-pink), var(--linear-purple));
 }
 
 .link-navigation{
