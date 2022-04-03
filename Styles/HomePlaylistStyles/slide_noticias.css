@@ -1,19 +1,13 @@
 @import url(../colors.css);
 
 .noticia{
+    position: relative;
     width: 80%;
     
     margin-left: 20%;
     margin-bottom: 40px;
 }
 
-.btn_noticia{
-    display: flex;
-    justify-content: flex-end;
-    color: var(--white);
-    
-    font-size: 2.15rem;
-}
 
 .gallery{
     position: relative;
@@ -24,40 +18,36 @@
     row-gap: 1rem;
     overflow-x: scroll;
     scroll-snap-type: x mandatory;
-    scroll-behavior: smooth;
     margin-left: 40px;
+
     
 }
 
 .noticias_titulo{
     font-size: 2.25rem;
-    color: var(--white);
+    color: #fff;
     font-weight: 600;
 
     padding-left: 50px;
+
+    margin-bottom: 40px;
 }
 
 .gallery li{
+    
     object-fit: cover;
     border-radius: 30px;
     height: 400px;
-    
-    scroll-snap-align: center;
-
-    
-
     transform: translateX(0);
     transition: transform 0.25s;
-    
-   
 }
 
 .gallery::-webkit-scrollbar{
-    height: 10px;
+    height: 0;
 }
 
 .gallery::-webkit-scrollbar-thumb{
-    background-color: var(--high-purple);
+    background-color: blueviolet;
 }
 
 .gallery li img{
@@ -67,9 +57,11 @@
     border-radius: 30px;
 }
 
+
+
 @media screen and (max-width: 768px) {
     .noticia{
         width: 100%;
         margin-left: 0;
     }
-}
+} 

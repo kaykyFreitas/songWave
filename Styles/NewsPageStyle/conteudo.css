@@ -1,0 +1,391 @@
+
+body{
+    background-color: #1D131D;
+}
+
+.principal{
+    position: relative;
+    margin-top: 114px;
+    margin-left: 20%;
+    width: 80%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    row-gap: 80px;
+    align-items: center;
+    justify-content: center;
+    z-index: 0;
+
+    color: #fff;
+    padding-bottom: 80px;
+}
+
+.video_noticias{
+    width: 100%;
+    height: 100%;
+    grid-column: span 2;
+}
+
+.gif{
+    position: relative;
+    object-fit: cover;
+
+    width: 100%;
+    height: 100%;
+}
+
+
+
+.box_noticia{
+    width: 80%;
+    margin: auto;
+    height: 80%;
+    color: #fff;
+    object-fit: cover;
+}
+
+.box_img_noticia{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+    margin-bottom: 25px;
+}
+
+.txt_noticias{
+    font-size: 3rem;
+    padding: 30px 40px;
+    font-weight: 700;
+}
+
+
+.box_noticia--conteudo{
+    text-align: center;
+    margin: auto;
+    width: 100%;
+}
+
+
+.noticia_texto{
+    width: 60%;
+    font-weight: 600;
+    font-size: 20px;
+    letter-spacing: 1.25px;
+}
+
+.principal_noticia{
+    position: relative;
+    width: 80%;
+    height: 500px;
+    margin-left: 20%;
+    background-image: url(../../Assets/Images/NewsImages/Rectangle\ 81\ \(1\).png);
+    background-repeat: no-repeat;
+    padding-bottom: 30px;
+
+    margin-bottom: 80px;
+}
+
+.principal_noticia h2 {
+    text-align: center;
+    font-size: 4rem;
+    font-weight: 600;
+    padding-top: 50px;
+    color: rgb(0, 0, 0);
+}
+
+.noticias_polemicas{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 80px;
+}
+
+.sobre_noticia{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: black;
+    padding: 40px 20px;
+    margin-bottom: 35px;
+    border-radius: 0 5px 5px 0;
+}
+
+.sobre_noticia p {
+    font-weight: 300;
+    margin-bottom: 25px;
+    letter-spacing: 1.25px;
+    line-height: 20px;
+}
+
+.sobre_noticia a {
+    border: 4px solid #fff;
+    padding: 10px;
+    margin-left: 30px;
+    width: 30%;
+    text-align: center;
+    border-radius: 15px;
+    margin-top: 30px;
+
+    transition: all 0.3s;
+}
+
+.sobre_noticia a:hover{
+    opacity: 50%;
+}
+
+.img_noticia{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.img_noticia img{
+    height: 400px;
+    width: 430px;
+}
+
+
+.sobre_noticia{
+    color: #fff;
+}
+
+@media screen and (max-width: 1301px) {
+    .principal{
+        margin-left: 25%;
+        width: 75%;  
+        row-gap: 10px;
+    }
+
+    .principal_noticia{
+        width: 75%;
+        margin-left: 25%;
+        height: 50vh;
+        padding: 0;
+    }
+
+    .principal_noticia h2 {
+        font-size: 1.50rem;
+    }
+
+    .box_img_noticia{
+        width: 100%;
+        height: 80%;
+        margin: 0;
+    }
+
+    .img_noticia img {
+        width: 300px;
+        height: 300px;
+    }
+
+    .sobre_noticia{
+        padding: 5px 10px;
+        margin: 0;
+    }
+
+    .sobre_noticia p {
+        font-size: 0.9rem;
+        margin: 0;
+    }
+
+    .noticias_polemicas{
+        width: 80%;
+        margin-top: 30px;
+    }
+
+    .noticia_texto{
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 950px){
+    .sobre_noticia a{
+        padding: 10px;
+        font-size: 0.8rem;
+    }
+
+    .sobre_noticia{
+        margin-bottom: 20px;
+    }
+
+    .sobre_noticia p{
+        font-weight: 300;
+        font-size: 0.8rem;
+    }
+
+    .noticias_polemicas{
+        margin-top: 60px;
+    }
+
+    .img_noticia img {
+        width: 220px;
+        height: 220px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .principal{
+        margin: 0;
+        padding-top: 150px ;
+        width: 100%;
+        row-gap: 30px;
+    }
+
+    .principal_noticia{
+        width: 100%;
+        height: 65vh;
+        margin: 0;
+        padding: 0;
+    }
+
+    .principal_noticia h2{
+        font-size: 2.25rem;
+    }
+
+    .noticias_polemicas{
+        width: 90%;
+
+    }
+
+    .img_noticia img {
+        width: 300px;
+        height: 300px;
+    }
+
+    .sobre_noticia{
+        margin: 0;
+        padding: 0;
+
+        margin-bottom: 25px;
+    }
+
+    .sobre_noticia p {
+        font-size: 0.9rem;
+        padding: 20px 15px;
+        margin-bottom: 0;
+    }
+
+    .sobre_noticia a{
+        margin: 0 auto;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+
+    .box_img_noticia{
+        
+        width: 100%;
+        height: 80%;
+        margin: 0;
+    }
+
+    .noticia_texto{
+        font-size: 0.9rem;
+    }
+
+    .box_noticia{
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 427px) {
+    body{
+        margin: 0;
+        padding: 0;
+    }
+    
+    .principal{
+        margin-left: 0;
+        width: 100%;
+
+        row-gap: 40px;
+    }
+
+    .principal_noticia{
+        width: 100%;
+        height: 40vh;
+        padding-top: 30px;
+    }
+
+    .principal_noticia h2{
+        font-size: 2rem;
+        
+    }
+
+    .txt_noticias{
+        font-size: 1rem;
+        padding: 25px 30px 0;
+    }
+
+    .noticia_texto{
+        font-size: 0.8rem;
+    }
+
+    .box_img_noticia{
+        height: 70%;
+        margin: 0;
+    }
+
+    .box_noticia{
+        width: 80%;
+        height: 80%;
+    }
+
+    .img_noticia{
+        position: relative;
+        
+    }
+
+    .principal_noticia{
+        width: 100%;
+        margin: 0;
+    }
+
+    .principal_noticia h2 {
+        font-size: 1.25rem;
+    }
+
+    .sobre_noticia{
+        padding: 0;
+        margin: 0;
+        margin-bottom: 10px;
+    }
+
+    .noticias_polemicas{
+        box-sizing: border-box;
+        width: 95%;
+        
+        margin-top: 60px;
+    }
+
+    .sobre_noticia p {
+        padding: 0;
+        margin: 0;
+        font-size: 10px;
+        padding: 5px 10px;
+    }
+
+    .sobre_noticia a{
+        width: 50%;
+        margin: auto;
+        font-size: 10px;
+        padding: 5px 0;
+        
+        margin-top: 5px;
+        margin-bottom: 5px;
+        border: 2px solid #fff;
+    }
+
+    .img_noticia img {
+        width: 140px;
+        height: 145px;
+        margin-bottom: 15px;
+    }
+
+    
+}
+

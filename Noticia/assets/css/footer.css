@@ -1,7 +1,16 @@
-@import url(../colors.css);
+
+
+:root {
+    --dark-purple: #1D131D;
+    --medium-purple: #291829;
+    --light-purple: #AB4ABA;
+    --pink: #FD01CF;
+    --light-pink: #FF4970;
+    --button-color: linear-gradient(90deg, #FD01CF -17.8%, #3A9DB9 126.48%);
+}
 
 footer {
-    position: absolute;
+    position: relative;
     width: 80%;
     height: 100px;
     
@@ -13,6 +22,8 @@ footer {
     justify-content: space-around;
     align-items: center;
     margin-left: 20%;
+
+    margin-top: 100px;
 }
 
 footer > p {
@@ -30,9 +41,26 @@ footer > .socialMedia > a {
     height: 35px;
 }
 
-@media screen and (max-width: 766px) {
-    @media screen and (min-width: 426px){
+@media screen and (max-width: 1024px){
+    footer{
+        width: 80%;
+        margin-left: 20%;
+        height: 100px;
+    }
 
+    footer > p {
+        font-size: 12px;
+        margin-left: 20px;
+        color: rgb(235, 226, 226);
+    }
+
+    .icons{
+        width: 20px;
+        height: 35px;
+    }
+} 
+
+@media screen and (max-width: 768px) {
         footer{
             width: 100%;
             margin-left: 0;
@@ -48,10 +76,13 @@ footer > .socialMedia > a {
             text-align: center;
         }
 
-
         .icons{
             width: 20px;
         }
     }
-}
+
+    @media screen and (max-width: 425px){
+        
+    }
+
 

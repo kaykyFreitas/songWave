@@ -188,9 +188,14 @@ ion-icon {
 }
 
 @media screen and (max-width: 768px) {
-      
+    
+    .musicSection{
+        width: 100%;
+        ;
+    }
+
     .pageBanner .musicSection .playerContainer{
-        width: 50%;
+        width: 100%;
     }
 
 }

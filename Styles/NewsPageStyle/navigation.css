@@ -1,0 +1,399 @@
+
+body{
+    font-family: 'Poppins', sans-serif;
+    overflow-y: scroll;
+
+    animation-name: slide;
+    animation-duration: 1.30s;
+    
+}
+
+body::-webkit-scrollbar{
+    width: 8px;
+}
+
+body::-webkit-scrollbar-thumb{
+    background-color: #753475;
+    border-radius: 45px;
+}
+
+.cabecalho{
+    position: fixed;
+    background-color: #291829;
+    width: 80%;
+    box-sizing: border-box;
+    padding: 32px 70px;
+    right: 0;
+    transition: all 0.5s;
+
+    top: 0;
+
+    z-index: 2;
+}
+
+.perfil{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    box-sizing: border-box;
+    color: #fff;
+
+    animation-name: header;
+    animation-duration: 1s;
+}
+
+.nome_perfil::before{
+    content: "";
+    background-image: url(../../Assets/Images/3site-1024x585.png);
+    padding: 10px 22px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 40px;
+    
+    margin-right: 40px;
+}
+
+.nome_perfil{
+    font-weight: 500;
+    
+    padding: 10px 0;
+
+}
+
+.config_perfil{
+    margin: 0  55px 0  22px ;
+    cursor: pointer;
+}
+
+.barra_lateral{
+    background-color: #fff;
+    width: 3px;
+    height: 50px;
+}
+
+.cabecalho__notificacao{
+    cursor: pointer;
+    font-size: 1.5rem;
+    margin-left: 40px;
+    display: flex;
+    align-items: center;
+}
+
+.navigation-bar{
+    background-color: #291829;
+    width: 20%;
+    height: 100vh;
+
+    position: fixed;
+
+    color: #fff;
+    box-sizing: border-box;
+    transition: all 0.5s;
+
+    overflow-y: scroll;
+    top: 0;
+    left: 0;
+
+    z-index: 2;
+}
+
+
+.navigation-bar::-webkit-scrollbar{
+    width: 8px;
+}
+
+.navigation-bar::-webkit-scrollbar-thumb{
+    background-color: #753475;
+    border-radius: 45px;
+}
+
+.navigation{
+    width: 100%;
+    margin: auto;
+   
+}
+
+.logo_songwave--navigation{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
+
+.logo_songWave{
+    width: 180px;
+    margin-bottom: 70px;
+    margin-top: 80px;
+}
+
+.list{
+    width: 80%;
+    margin: auto;
+    
+}
+
+.list-navigation{
+    padding: 26px 0;
+    opacity: 100%;
+    font-size: 1rem;
+
+    color: #BBBABA;
+    white-space: normal;
+    box-sizing: border-box;
+   
+}
+
+.navigation-bar .navigation .list .list-navigation .active{
+    background: linear-gradient(to right, #af43b3, #291829);
+}
+
+.link-navigation{
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 30px 0;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+
+    animation-name: navBar;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+
+}
+
+.navigation-bar .navigation .list .list-navigation .active {
+    color: #fff;
+    padding-left: 30px;
+}
+
+.icon{
+    padding-left: 10px;
+    padding-right: 40px;
+    font-size: 1.7rem;
+    font-weight: normal;
+}
+
+.Icon-title{
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.sub-titulo{
+    font-size: 1.5rem;
+    color: #FF4970;
+
+    text-align: center;
+}
+
+
+.link-navigation:hover{
+    color: #fff;
+    transition: all 0.3s ease-in-out;
+}
+
+
+.new_playlist{
+   border: 2px solid #BBBABA;
+   padding-top: 15px;
+   padding-bottom: 15px;
+   border-radius: 8px;
+   box-sizing: border-box;
+   margin-bottom: 30px;
+   
+   animation-name: navBar;
+   animation-duration: 2s;
+}
+
+.new_playlist_conteudo{
+    color: #BBBABA;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon_playlist{
+    font-size: 1.75rem;
+    padding-right: 10px;
+}
+
+.new_playlist :hover{
+    color: #fff;
+    transition: all 0.3s ease-in-out;
+}
+
+.menu_mobile{
+    display: none;
+}
+
+
+@keyframes slide {
+    from{
+       opacity: 0;
+    }
+    
+    to{
+        opacity: 1;
+    }
+}
+
+@keyframes navBar {
+    from{
+        margin-left: 40px;
+    }
+    to{
+        margin: 0;
+    }
+}
+
+@keyframes header {
+    from{
+        padding-right: 40px;
+    }
+
+    to{
+        padding-right: 0;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    .navigation-bar{
+        width: 25%;
+    }
+
+    .icon{
+        font-size: 1.45rem;
+        padding-right: 20px;
+    }
+
+    .Icon-title{
+        font-size: 0.8rem;
+       
+    }
+
+    .sub-titulo{
+        font-size: 1rem;
+    }
+    
+    .logo_songWave{
+        width: 120px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+      
+    .navigation-bar{
+        position: fixed;
+        display: flex;
+        width: 50%;
+        box-sizing: border-box;
+        top: 150px;
+        padding-bottom: 150px;
+        
+    }
+
+    .menu-lateral--ativo{
+        display: none;
+    }
+
+    .logo_songwave--navigation{
+        display: none;
+    }
+
+    .list-navigation{
+        padding: 10px 0;
+    }
+
+    .link-navigation{
+        padding: 30px 0;
+    }
+
+    .icon{
+        font-size: 1.4rem;
+    }
+
+    .Icon-title{
+        font-size: 1rem;
+    }
+
+    .sub-titulo{
+        padding: 44px 0;
+        font-size: 1.3rem;
+    }
+
+    .cabecalho{
+        position: fixed;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        border: none;
+        
+    }
+
+    .nome_perfil{
+        display: none;
+    }
+
+    .config_perfil{
+        display: none;
+    }
+
+    .barra_lateral{
+        display: none;
+    }
+
+    .cabecalho__notificacao{
+        display: none;
+    }
+
+    .menu_mobile{
+        position: relative;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        box-sizing: border-box;
+        padding: 30px 60px;
+        height: 150px;
+    }
+
+
+    .menu{
+        font-size: 2rem;
+    }
+
+    .notificacao_mobile{
+        font-size: 2rem;
+    }
+
+    .logowave_mobile{
+        width: 70px;
+    }
+}
+
+
+
+@media screen and (max-width: 426px) {
+    
+    .menu_mobile{
+        padding: 0;
+        margin: 0 30px;
+    }
+    
+    .navigation-bar{
+        width: 100%;
+    }
+
+    .menu-lateral--ativo{
+        display: none;
+    }
+
+    .menu{
+        font-size: 1.7rem;
+    }
+
+    .notificacao_mobile{
+        font-size: 1.6rem;
+    }
+}
