@@ -27,6 +27,8 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+
+    z-index: 2;
     
 }
 
@@ -73,7 +75,8 @@ body{
     flex-direction: column;
     align-items: center;
     justify-content: center; 
-    margin-top: 50px;
+    
+    padding: 50px 0;
 }
 
 .icon{
@@ -91,7 +94,7 @@ body{
 
 .loguet{
     width: 80%;
-    margin: 20px 0;
+    margin: 30px 0;
     border-bottom: 3px solid #1D131D;
 }
 
@@ -128,7 +131,7 @@ body{
     margin: auto;
     border-radius: 20px;
     box-shadow: 0 4px 2px rgb(198, 196, 196);
-    margin: 45px 0 10px 0;
+    margin-top: 80px;
 
     overflow: hidden;
 }
@@ -165,22 +168,26 @@ body{
     justify-content: center;
     align-items: center;
     margin: 30px 0;
+    
 }
 
 .or_bar{
     font-size: 1.1rem;
     content: #ccc;
     position: relative;
+
+    font-size: 1.5rem;
 }
 
 .or .or_bar::after, .or .or_bar::before{
     content: "";
     position: absolute;
     height: 2px;
-    width: 150px;
+   
     bottom: 50%;
     right: 50px;
     background-color: rgb(58, 58, 58);
+    width: 100px;
 }
 
 .or .or_bar::after{
@@ -192,7 +199,7 @@ body{
     justify-content: center;
     align-items: center;
 
-    margin-top: 25px;
+    margin-top: 40px;
 }
 
 .social_midia--logo a{
@@ -205,7 +212,14 @@ body{
 }
 
 .img_midia{
-    width: 22px;
+    width: 33px;
+}
+
+
+.balls_principal{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
 }
 
 .balls .Ball_bottom_left{
@@ -316,7 +330,7 @@ body{
 
     .form{
         margin-top: 10px;
-        margin-bottom: 30px;
+        padding: 20px 0;
     }
 
     .login{
@@ -324,7 +338,13 @@ body{
     }
 
     .txt_login{
+        font-size: 3rem;
         margin: 30px 40px;
+    }
+
+    .btn{
+        padding: 10px 100px;
+        margin-top: 25px;
     }
 
     .or{
@@ -338,15 +358,30 @@ body{
     .social_midia{
         margin-top: 20px;
     }
+
+    .social_midia--logo{
+        margin-left: 20px;
+    }
+
+    .social_midia--logo:first-child {
+        margin-left: 0;
+    }
 }
 
 @media screen and (min-width: 425px) {
 
     .container{
         width: 100%;
+     
+    }
+
+    .btn{
+        padding: 10px 80px;
+        margin-top: 25px;
     }
 
     .txt_login{
+        font-size: 3rem;
         font-size: 2.5rem;
     }
 
@@ -358,4 +393,36 @@ body{
         width: 100%;
         height: 100%;
     }  
+
+    
+}
+
+
+@media screen and (min-width: 375px){
+    .mobile{
+        width: 100%;
+        height: 100%;
+    }
+
+    .txt_login{
+        font-size: 3rem;
+    }
+
+    .btn{
+     
+        margin-top: 25px;
+    }
+    
+   
+    .img_midia{
+        width: 22px;
+    }
+
+    .or .or_bar::after, .or .or_bar::before{
+        width: 80px;     
+    }
+
+    .social_midia--logo{
+        margin-left: 5px;
+    }
 }
