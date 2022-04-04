@@ -351,11 +351,11 @@ body{
     }
 
     .or .or_bar::after, .or .or_bar::before{
-        width: 100px;     
+        width: 50px;     
     }
 
     .logIn{
         width: 100%;
-        height: 100%;
+        height: 400px;
     }  
 }
