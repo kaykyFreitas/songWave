@@ -37,7 +37,15 @@ footer > .socialMedia > a {
     height: 35px;
 }
 
-@media screen and (max-width: 766px) {
+@media screen and (max-width: 1024px){
+    @media screen and (min-width: 768px) {
+        footer{
+            margin-left: 22%;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
     @media screen and (min-width: 426px){
 
         footer{
@@ -58,6 +66,28 @@ footer > .socialMedia > a {
 
         .icons{
             width: 20px;
+        }
+    }
+}
+
+@media screen and (max-width: 426px){
+    @media screen and (min-width: 375px) {
+        footer{
+            width: 100%;
+            margin-left: 0;
+        }
+
+        footer p {
+            font-size: 10px;
+        }
+
+        .socialMedia{
+            width: 100%;
+            text-align: center;
+        }
+
+        .socialMedia .icons {
+            width: 15px;
         }
     }
 }
