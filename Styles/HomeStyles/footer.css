@@ -13,7 +13,10 @@ footer {
 }
 
 footer > p {
+    width: 60%;
     margin-left: 20px;
+    text-align: center;
+    font-size: 15px;
 }
 
 footer > p > a {
@@ -24,12 +27,17 @@ footer > p > a {
 }
 
 footer > .socialMedia {
-    margin-right: 200px;
+    width: 50%;
+    text-align: center;
 }
 
 footer > .socialMedia > a {
     text-decoration: none;
     margin-left: 30px;
+}
+
+.icons{
+    width: 25px;
 }
 
 @media screen and (max-width: 766px) {
@@ -41,11 +49,23 @@ footer > .socialMedia > a {
         }
 
         footer > .socialMedia {
-            display: flex;
-            width: 50%;
-        
-            margin-right: 2%;
+            width: 70%;
+            text-align: center;
         }
+        
+        .icons{
+            width: 20px;
+        }
+    }
+}
 
+@media screen and (max-width: 390px){
+    footer > p {
+        width: 50%;
+        font-size: 10px;
+    }
+
+    .icons{
+        width: 15px;
     }
 }
