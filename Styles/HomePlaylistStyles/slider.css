@@ -1,11 +1,10 @@
-@import url(../colors.css);
-
+  
   input[type=radio] {
     display: none;
   }
   
   body{
-    background-color: var(--dark-purple);
+    background-color: #1D131D;
   }
 
   .container {
