@@ -1,6 +1,4 @@
-@import url(../colors.css);
-
-.noticia{
+ .noticia{
     position: relative;
     width: 80%;
     
@@ -52,16 +50,32 @@
 
 .gallery li img{
     width: 100%;
-    height: 100%;
+    height: 95%;
     object-fit: cover;
     border-radius: 30px;
 }
 
+@media screen and (max-width: 1024px){
+    .gallery{
+        margin-left: 10%;
+    }
 
+    .noticias_titulo{
+        margin-left: 10%;
+    }
+}
 
 @media screen and (max-width: 768px) {
     .noticia{
         width: 100%;
         margin-left: 0;
+    }
+
+    .gallery{
+        margin-left: 20px;
+    }
+
+    .noticias_titulo{
+        margin-left: 20px;
     }
 } 
