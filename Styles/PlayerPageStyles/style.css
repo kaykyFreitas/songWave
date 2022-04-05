@@ -179,15 +179,67 @@ ion-icon {
     border-radius: 10px;
 }
 
-
-@media screen and (max-width: 1300px) {
-    .pageBanner .musicSection .playerContainer{
+@media screen and (max-width: 1300px){
+    .musicSection{
+        margin-left: 20%;
         width: 75%;
     }
+
+    .playerContainer{
+        width: 75%;
+    }
+
+    .pageBanner{
+        margin-top: 110px;
+        width: 75%;
+        margin-left: 20%;
+    }
+}
+
+
+@media screen and (max-width: 1024px) {
+    .pageBanner{
+        width: 75%;
+        margin-top: 100px;
+    }
+    
+   .playerContainer{
+       width: 75%;
+       height: 100%;
+   }
+
+   .musicControl{
+       width: 100%;
+   }
+
+   .playerButtons > .prev, .play, .pause, .next{
+       width: 20px;
+       padding: 0 15px;
+   }
+
+   .playerVolume .volume{
+        width: 25px;
+   }
+
+   .volumeSlider{
+       width: 80px;
+       height: 4px;
+   }
 
 }
 
 @media screen and (max-width: 768px) {
+
+    .pageBanner{
+        margin-top: 130px;
+        width: 100%;
+        margin-left: 20%;
+    }
+
+    .playerContainer{
+        width: 100%;
+        height: 100%;
+    }
     
     .musicSection{
         width: 100%;
