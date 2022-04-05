@@ -27,6 +27,8 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+
+    z-index: 2;
     
 }
 
@@ -66,14 +68,21 @@ body{
 .login{
     width: 100%;
     height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .form{
+    width: 100%;
+    
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center; 
-    margin-top: 50px;
+    
 }
 
 .icon{
@@ -84,14 +93,15 @@ body{
 }
 
 .txt_login{
-    font-size: 3rem;
-    font-weight: 600;
-    margin: 30px 50px;
+    width: 80%;
+    font-size: 2.25rem;
+    font-weight: 600;   
+   
 }
 
 .loguet{
     width: 80%;
-    margin: 20px 0;
+    margin: 30px 0;
     border-bottom: 3px solid #1D131D;
 }
 
@@ -128,7 +138,7 @@ body{
     margin: auto;
     border-radius: 20px;
     box-shadow: 0 4px 2px rgb(198, 196, 196);
-    margin: 45px 0 10px 0;
+    margin: 20px 0;
 
     overflow: hidden;
 }
@@ -164,23 +174,26 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 30px 0;
+    margin: 15px 0;
 }
 
 .or_bar{
     font-size: 1.1rem;
     content: #ccc;
     position: relative;
+
+    font-size: 1.2rem;
 }
 
 .or .or_bar::after, .or .or_bar::before{
     content: "";
     position: absolute;
     height: 2px;
-    width: 150px;
+   
     bottom: 50%;
     right: 50px;
     background-color: rgb(58, 58, 58);
+    width: 150px;
 }
 
 .or .or_bar::after{
@@ -188,11 +201,13 @@ body{
 }
 
 .social_midia{
+    width: 100%;
+    height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
 
-    margin-top: 25px;
+    margin-top: 15px;
 }
 
 .social_midia--logo a{
@@ -205,158 +220,108 @@ body{
 }
 
 .img_midia{
-    width: 22px;
-}
-
-.balls .Ball_bottom_left{
-    position: absolute;
-    z-index: -1;
-    bottom: -20%;
-    left: -10%;
-
-    width: 500px;
-
-}
-
-.balls .Ball_top_left{
-    position: absolute;
-    z-index: -1;
-    top: -25%;
-    left: -10%;
-
-    width: 500px;
-}
-
-.balls .Ball_bottom_right{
-    position: absolute;
-    z-index: -1;
-    right: -10%;
-    bottom: -20%;
-
-    width: 500px;
-}
-
-.balls .Ball_top_right{
-    position: absolute;
-    z-index: -1;
-    right: -10%;
-    top: -25%;
-
-    
-    width: 500px;
+    width: 26px;
 }
 
 
-
-@media screen and (max-width: 1245px) {
-    .form{
-        margin: 0;
+@media screen and (max-width: 1200px) {
+    .container{
+        width: 90%;
     }
 
-    .form .remember label span{
-        font-size: 10px;
-    }
-
-    .remember .link_senha{
-        font-size: 10px;
+    .txt_login{
+        font-size: 30px;
     }
 
     .btn{
-        margin: 10px 0;
-    }
-    
-    .icon{
-        padding: 0 7px;
-        font-size: 12px;
-    }
-
-    .or{
+        margin: 0;
+        padding: 8px 70px;
         margin: 20px 0;
     }
 
+    .or{
+        margin: 10px 0;
+    }
+
     .or .or_bar::after, .or .or_bar::before{
-        width: 70px;     
+        content: "";
+        
+        width: 100px;
+    }
+
+    .icon{
+        font-size: 15px;
     }
     
-    .social_midia--logo a{
-        padding: 0 25px;    
+    .loguet{
+        width: 90%;
     }
 
-    .btn{
-        margin-top: 20px;
-        padding: 10px 70px;
-    }
-
-    .balls .Ball_bottom_left{
-        display: none;
-    }
-
-    .balls .Ball_top_left{
-        display: none;
+    .remember{
+        width: 90%;
     }
     
-    .balls .Ball_bottom_right{
-        display: none;
+    .remember span {
+        font-size: 12px;
     }
 
-    .balls .Ball_top_right{
-        display: none;
+    .remember .link_senha{
+        font-size: 12px;
+    }
+
+    .social_midia{
+        margin: 10px 0;
+    }
+
+    .social_midia--logo{
+        width: 100%;
+        text-align: center;
+    }
+
+    .social_midia--logo a {
+        padding: 0;
+    }
+
+    .img_midia{
+        width: 22px;
     }
 }
 
-@media screen and (max-width: 768px) {
-    .box_logo{
-        display: none;
-    }
-
+@media screen and (max-width: 833px){
     .box_login{
         width: 80%;
-        border-radius: 30px;
+        border-radius: 20px;
     }
 
-    .form{
-        margin-top: 10px;
-        margin-bottom: 30px;
+    .box_logo{
+        width: 0;
+        display: none;
     }
 
     .login{
         width: 100%;
     }
 
-    .txt_login{
-        margin: 30px 40px;
-    }
-
-    .or{
+    .btn{
         margin: 20px 0;
     }
 
     .or .or_bar::after, .or .or_bar::before{
-        width: 150px;     
-    }
-
-    .social_midia{
-        margin-top: 20px;
+        content: "";
+        
+        width: 140px;
     }
 }
 
-@media screen and (min-width: 425px) {
-
-    .container{
+@media screen and (max-width: 550px){
+    .box_login{
         width: 100%;
-        height: 900px;
-    }
-
-    .txt_login{
-        font-size: 2.5rem;
+        border-radius: 20px;
     }
 
     .or .or_bar::after, .or .or_bar::before{
-        width: 50px;     
+        content: "";
+        
+        width: 80px;
     }
-
-    .logIn{
-        width: 100%;
-        height: 900px;
-    }  
 }
