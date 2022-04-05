@@ -263,6 +263,10 @@ body::-webkit-scrollbar-thumb{
 }
 
 @media screen and (max-width: 1300px) {
+    .cabecalho{
+        width: 75%;
+    }
+
     .navigation-bar{
         width: 25%;
     }
