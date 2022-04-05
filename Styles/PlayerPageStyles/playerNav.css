@@ -102,6 +102,8 @@ body::-webkit-scrollbar-thumb{
     transition: all 0.5s;
 
     overflow-y: scroll;
+
+    z-index: 20;
 }
 
 
