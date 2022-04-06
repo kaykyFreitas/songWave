@@ -1,15 +1,5 @@
 @import url(../colors.css);
 
-:root {
-	--roxo-escuro: #1D131D;
-	--roxo-claro: #3D273D;
-	--rosa: #AB4ABA;
-    --branco: #fff;
-    --vermelho-das-letras: #FF4970;
-    --sombra-da-playlist: #535252;
-}
-
-
 .titulo_categorias{
     width: 80%;
     display: flex;
@@ -60,7 +50,7 @@
 .box_playlist{
     
     padding: 20px 15px;
-    background-color: var(--purple);
+    background-color: var(--dark-purple);
 
     object-fit: contain;
     border-radius: 25px;
