@@ -1,3 +1,4 @@
+@import url(../colors.css);
 
 :root {
 	--roxo-escuro: #1D131D;
@@ -14,7 +15,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    color: var(--branco);
+    color: var(--white);
 
     transition: all 0.2s ease-in;
     
@@ -38,7 +39,7 @@
 }
 
 .titulo_categorias a:hover{
-    color: rgb(163, 162, 162);
+    color: var(--light-grey);
 }
 
 .box{
@@ -59,12 +60,12 @@
 .box_playlist{
     
     padding: 20px 15px;
-    background-color: var(--roxo-claro);
+    background-color: var(--purple);
 
     object-fit: contain;
     border-radius: 25px;
 
-    box-shadow: 0 6px 4px var(--sombra-da-playlist);
+    box-shadow: 0 6px 4px var(--playlist-shadow);
     transition: all 0.3s ease-in-out;
 
     margin-bottom: 70px;
