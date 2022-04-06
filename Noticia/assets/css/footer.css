@@ -1,21 +1,11 @@
-
-
-:root {
-    --dark-purple: #1D131D;
-    --medium-purple: #291829;
-    --light-purple: #AB4ABA;
-    --pink: #FD01CF;
-    --light-pink: #FF4970;
-    --button-color: linear-gradient(90deg, #FD01CF -17.8%, #3A9DB9 126.48%);
-}
-
+@import url(../../../Styles/colors.css);
 footer {
     position: relative;
     width: 80%;
     height: 100px;
     
     background-color: var(--medium-purple);
-    color: #FFF;
+    color: var(--white);
     font-family: 'Poppins', sans-serif;
 
     display: flex;
@@ -28,7 +18,7 @@ footer {
 
 footer > p {
     margin-left: 20px;
-    color: rgb(235, 226, 226);
+    color: var(--light-grey);
 }
 
 footer > .socialMedia > a {
@@ -51,7 +41,7 @@ footer > .socialMedia > a {
     footer > p {
         font-size: 12px;
         margin-left: 20px;
-        color: rgb(235, 226, 226);
+        color: var(--light-grey);
     }
 
     .icons{

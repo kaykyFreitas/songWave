@@ -1,11 +1,14 @@
+@import url(../../../Styles/colors.css);
 
 body{
     font-family: 'Poppins', sans-serif;
     overflow-y: scroll;
-
     animation-name: slide;
     animation-duration: 1.30s;
+
+    padding-top: 114px;
     
+  
 }
 
 body::-webkit-scrollbar{
@@ -13,22 +16,26 @@ body::-webkit-scrollbar{
 }
 
 body::-webkit-scrollbar-thumb{
-    background-color: #753475;
+    background-color: var(--high-purple);
     border-radius: 45px;
 }
 
 .cabecalho{
     position: fixed;
-    background-color: #291829;
+    background-color: var(--medium-purple);
     width: 80%;
     box-sizing: border-box;
-    padding: 32px 70px;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    padding-right: 70px;
     right: 0;
+    border-left: 1.5px solid var(--white);
     transition: all 0.5s;
 
     top: 0;
 
-    z-index: 2;
+    z-index: 1;
+
 }
 
 .perfil{
@@ -37,7 +44,7 @@ body::-webkit-scrollbar-thumb{
     align-items: center;
 
     box-sizing: border-box;
-    color: #fff;
+    color: var(--white);
 
     animation-name: header;
     animation-duration: 1s;
@@ -45,7 +52,7 @@ body::-webkit-scrollbar-thumb{
 
 .nome_perfil::before{
     content: "";
-    background-image: url(../img/3site-1024x585.png);
+    background-image: url(../../Assets/Images/3site-1024x585.png);
     padding: 10px 22px;
     background-repeat: no-repeat;
     background-position: center;
@@ -68,7 +75,7 @@ body::-webkit-scrollbar-thumb{
 }
 
 .barra_lateral{
-    background-color: #fff;
+    background-color: var(--white);
     width: 3px;
     height: 50px;
 }
@@ -81,22 +88,30 @@ body::-webkit-scrollbar-thumb{
     align-items: center;
 }
 
+.switchTheme > a > input[type=checkbox] {
+    visibility: hidden;
+    height: 0;
+    width: 0;
+}
+
+
 .navigation-bar{
-    background-color: #291829;
+    background-color: var(--medium-purple);
     width: 20%;
     height: 100vh;
 
     position: fixed;
 
-    color: #fff;
+    color: var(--white);
     box-sizing: border-box;
     transition: all 0.5s;
 
     overflow-y: scroll;
+
     top: 0;
     left: 0;
 
-    z-index: 2;
+    z-index: 1;
 }
 
 
@@ -105,7 +120,7 @@ body::-webkit-scrollbar-thumb{
 }
 
 .navigation-bar::-webkit-scrollbar-thumb{
-    background-color: #753475;
+    background-color: var(--high-purple);
     border-radius: 45px;
 }
 
@@ -138,14 +153,14 @@ body::-webkit-scrollbar-thumb{
     opacity: 100%;
     font-size: 1rem;
 
-    color: #BBBABA;
+    color: var(--light-grey);
     white-space: normal;
     box-sizing: border-box;
    
 }
 
 .navigation-bar .navigation .list .list-navigation .active{
-    background: linear-gradient(to right, #af43b3, #291829);
+    background: linear-gradient(to right, var(--linear-pink), var(--linear-purple));
 }
 
 .link-navigation{
@@ -164,7 +179,7 @@ body::-webkit-scrollbar-thumb{
 }
 
 .navigation-bar .navigation .list .list-navigation .active {
-    color: #fff;
+    color: var(--white);
     padding-left: 30px;
 }
 
@@ -182,20 +197,20 @@ body::-webkit-scrollbar-thumb{
 
 .sub-titulo{
     font-size: 1.5rem;
-    color: #FF4970;
+    color: var(--light-pink);
 
     text-align: center;
 }
 
 
 .link-navigation:hover{
-    color: #fff;
+    color: var(--white);
     transition: all 0.3s ease-in-out;
 }
 
 
 .new_playlist{
-   border: 2px solid #BBBABA;
+   border: 2px solid var(--light-grey);
    padding-top: 15px;
    padding-bottom: 15px;
    border-radius: 8px;
@@ -207,7 +222,7 @@ body::-webkit-scrollbar-thumb{
 }
 
 .new_playlist_conteudo{
-    color: #BBBABA;
+    color: var(--light-grey);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -219,14 +234,13 @@ body::-webkit-scrollbar-thumb{
 }
 
 .new_playlist :hover{
-    color: #fff;
+    color: var(--white);
     transition: all 0.3s ease-in-out;
 }
 
 .menu_mobile{
     display: none;
 }
-
 
 @keyframes slide {
     from{
@@ -260,6 +274,7 @@ body::-webkit-scrollbar-thumb{
 @media screen and (max-width: 1300px) {
     .navigation-bar{
         width: 25%;
+        height: 100%;
     }
 
     .icon{
@@ -268,7 +283,7 @@ body::-webkit-scrollbar-thumb{
     }
 
     .Icon-title{
-        font-size: 0.8rem;
+        font-size: 1rem;
        
     }
 
@@ -356,6 +371,8 @@ body::-webkit-scrollbar-thumb{
         box-sizing: border-box;
         padding: 30px 60px;
         height: 150px;
+        
+        
     }
 
 

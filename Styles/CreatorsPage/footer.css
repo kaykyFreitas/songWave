@@ -1,10 +1,13 @@
+@import url(../colors.css);
+
 footer {
     width: 100%;
     height: 100px;
-    margin-top: 200px;
     background-color: var(--medium-purple);
-    color: #FFF;
+    color: var(--white);
     font-family: 'Poppins', sans-serif;
+
+    margin-top: 200px;
 
     display: flex;
     justify-content: space-between;
@@ -12,17 +15,37 @@ footer {
 }
 
 footer > p {
-	
+    width: 60%;
     margin-left: 20px;
+    text-align: center;
+    font-size: 15px;
+}
+
+footer > p > a {
+    text-decoration: none;
+    color: var(--white);
+    cursor: pointer;
+    margin-right: 25px;
 }
 
 footer > .socialMedia {
-    margin-right: 200px;
+    width: 50%;
+    text-align: center;
 }
 
 footer > .socialMedia > a {
     text-decoration: none;
     margin-left: 30px;
+}
+
+.icons{
+    color: var(--white);
+    width: 25px;
+    transition: all 0.3s ease-in-out;
+}
+
+.icons:hover{
+    color: rgb(132, 130, 130);
 }
 
 @media screen and (max-width: 766px) {
@@ -34,11 +57,23 @@ footer > .socialMedia > a {
         }
 
         footer > .socialMedia {
-            display: flex;
-            width: 50%;
-        
-            margin-right: 2%;
+            width: 70%;
+            text-align: center;
         }
+        
+        .icons{
+            width: 20px;
+        }
+    }
+}
 
+@media screen and (max-width: 390px){
+    footer > p {
+        width: 50%;
+        font-size: 10px;
+    }
+
+    .icons{
+        width: 15px;
     }
 }
