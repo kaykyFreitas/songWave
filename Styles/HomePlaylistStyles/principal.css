@@ -50,7 +50,7 @@
 .box_playlist{
     
     padding: 20px 15px;
-    background-color: var(--dark-purple);
+    background-color: var(--purple);
 
     object-fit: contain;
     border-radius: 25px;
@@ -106,7 +106,7 @@
 }
 
 .box_playlist--conteudo{
-    color: var(--branco);
+    color: var(--white);
 }
 
 .box_img{
