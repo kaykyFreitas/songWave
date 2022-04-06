@@ -52,7 +52,7 @@ body::-webkit-scrollbar-thumb{
 
 .nome_perfil::before{
     content: "";
-    background-image: url(../../Assets/Images/3site-1024x585.png);
+    background-image: url(../../assets/img/3site-1024x585.png);
     padding: 10px 22px;
     background-repeat: no-repeat;
     background-position: center;
