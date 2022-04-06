@@ -43,7 +43,7 @@ body{
     width: 80%;
     font-size: 2.5rem;
     font-weight: 600; 
-
+    margin-bottom: 20px;
 }
 
 
@@ -106,7 +106,7 @@ body{
 
 .loguet{
     width: 80%;
-    margin: 15px 0;
+    margin: 10px 0;
     border-bottom: 3px solid #1D131D;
 }
 
@@ -264,6 +264,7 @@ body{
     
     .loguet{
         width: 90%;
+        margin: 10px 0;
     }
 
     .remember{
@@ -345,7 +346,7 @@ body{
 @media screen and (max-width: 550px){
     .box_login{
         width: 100%;
-        height: 470px;
+        height: 500px;
         border-radius: 20px;
     }
 
