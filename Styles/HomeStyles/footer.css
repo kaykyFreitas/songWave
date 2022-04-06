@@ -37,7 +37,13 @@ footer > .socialMedia > a {
 }
 
 .icons{
+    color: var(--white);
     width: 25px;
+    transition: all 0.3s ease-in-out;
+}
+
+.icons:hover{
+    color: rgb(132, 130, 130);
 }
 
 @media screen and (max-width: 766px) {

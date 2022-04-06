@@ -274,6 +274,7 @@ body::-webkit-scrollbar-thumb{
 @media screen and (max-width: 1300px) {
     .navigation-bar{
         width: 25%;
+        height: 100%;
     }
 
     .icon{

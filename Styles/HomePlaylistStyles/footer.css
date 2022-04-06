@@ -1,8 +1,9 @@
 @import url(../colors.css);
 
 footer {
-    width: 100%;
+    width: 80%;
     height: 100px;
+    margin-left: 20%;
     background-color: var(--medium-purple);
     color: var(--white);
     font-family: 'Poppins', sans-serif;
@@ -38,11 +39,28 @@ footer > .socialMedia > a {
 
 .icons{
     width: 25px;
+    transition: all 0.3s ease-in-out;
+}
+
+.icons:hover{
+    color: #ccc;
+}
+
+@media screen and (max-width: 1024px){
+    footer{
+        width: 80%;
+        margin-left: 25%;
+    }
 }
 
 @media screen and (max-width: 766px) {
-    @media screen and (min-width: 426px){
+  
 
+        footer{
+            width: 100%;
+            margin-left: 0;
+        }
+        
         footer > p {
             width: 50%;
             font-size: 10px;
@@ -56,10 +74,15 @@ footer > .socialMedia > a {
         .icons{
             width: 20px;
         }
-    }
+    
 }
 
-@media screen and (max-width: 390px){
+@media screen and (max-width: 400px){
+    footer{
+        width: 100%;
+        margin-left: 0;
+    }
+
     footer > p {
         width: 50%;
         font-size: 10px;
