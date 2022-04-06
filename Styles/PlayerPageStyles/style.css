@@ -286,7 +286,11 @@ ion-icon {
    .volumeSlider{
     width: 70px;
     height: 4px;
-}
+    }
+
+    .options, .heart {
+        display: none
+    }
 
 }
 
